@@ -1,0 +1,16 @@
+To perform this investigation, I first had had to isolate the both the
+Roulette_Player_WinLoss logs from the March 10, 12, and the 15 as well as the
+Dealer_Schedules. Using the grep command, which is basically search, I
+shearched for the the for all the losses on those date, and the players,
+playing during that time and moved them to a file called Roulette_Losses.
+Analizing those results, I found one player was present during the time of 
+the losses, one Miley Schmidt. 
+
+Then wanting to see if she had any help from a dealer, I created a script to
+find the name of the dealer who was working roulette during date and time
+of the losses, the results of the script are written in the
+Notes_Dealer_Analysis. This shows that Billy Jones was the dealer who was 
+working at the time of the losses. 
+
+So based on the information gathered I believe that Miley Schmidt, 
+and Billy Jones are working together to defraud the casino. 
