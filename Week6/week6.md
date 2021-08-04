@@ -105,16 +105,12 @@ babbage:freedom:18387:0:99999:7:::
 
 lovelace:dragon:18387:0:99999:7:::
 
-stallman:computer:18387:0:99999:7:::
+stallman:compute r:18387:0:99999:7:::
 
-turing:lakers:18387:0:99999:7:::
+turing:laker s:18387:0:99999:7:::
 
-\<iframe width="560" height="315"
-src="https://www.youtube.com/embed/XsYnBXvFY6c" title="YouTube video
-player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen>\</iframe>
-
+I made a short video instead of screen shots. it can be viewed here. 
+"https://www.youtube.com/embed/XsYnBXvFY6c"
 ---
 
 Â© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights
