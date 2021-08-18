@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>week8_submission</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p>Networking Fundamentals Homework: Rocking your Network! </p>
+<p><strong>Phase 1</strong>: <em>"I'd like to Teach the World to <em>Ping</em>"</em> </p>
+<p>For this part, I looked up the easiest way to ping a range of IP addresses. It was to create a file with all the ip's in it and then run the fping -f (file name). In making the file I had to remove the CITR range at the end in order to get a response. </p>
+<p><img src="Pictures/10000000000002BF000001B00B606710.png" style="width:6.9252in;height:4.2547in" /></p>
+<p>Mitigation against vulnerabilities.</p>
+<p>Turn off ping response.</p>
+<p>What layer of the OSI are we dealing with. </p>
+<p>Pinging a computer is working on Layer 3 (Networking Layer) of the OSI modle. </p>
+<p><strong>Phase 2</strong>: <em><em>"Some </em><em>Syn</em><em> for Nothin`"</em></em> </p>
+<p>I used the command sudo nmap -sS 167.172.144.11</p>
+<p><img src="Pictures/100000000000030B000000BAEE011A4C.png" style="width:6.9252in;height:1.6528in" /></p>
+<p>Mitigation against vulnerabilities.</p>
+<p>Filter the port. </p>
+<p>What layer of the OSI are we dealing with. </p>
+<p>Pinging a computer is working on Layer 4</p>
+<p><span id="anchor"></span>Phase 3: <em>"I Feel a <em>DNS</em> Change Comin' On"</em> </p>
+<p>This part I used the ssh (username)@(ipaddress) command using the username and password given in the homework file. </p>
+<p>I then nano'd the /etc/hosts file to get the ip of the redirect ipaddress</p>
+<p>From the I ran nslookup 98.137.246.8</p>
+<p><img src="Pictures/100000000000037100000054A0040513.png" style="width:6.9252in;height:0.6598in" /><img src="Pictures/1000000000000347000001DB9F785DBD.png" style="width:6.9252in;height:3.9201in" /></p>
+<p>Mitigation against vulnerabilities.</p>
+<p>Implementing DNSSEC (domain Name system security extension), basically it authenticates responses to domain name lookup. </p>
+<p>What layer of the OSI are we dealing with. </p>
+<p>The SSH connection, and the DNS are working on the 7<sup>th</sup> layer which is the application layer protocol. </p>
+<p>Your Submission: <em>"Its the End of the Assessment as We Know It, and I Feel Fine"</em> </p>
+<p>For this phase, I logged back into the server using the ssh command. I then moved into the etc folder and ran the ls command, finding the packetcaptureinfo.txt</p>
+<p>I then ran nano packetcaptureinfo and in it was a link to:</p>
+<p><a href="https://drive.google.com/file/d/1ic-CFFGrbruloYrWaw3PvT71elTkh3eF/view">https://drive.google.com/file/d/1ic-CFFGrbruloYrWaw3PvT71elTkh3eF/view</a></p>
+<p>I then closed out of the terminal and opened the link in the browser and downloaded it and opened in wireshark</p>
+<p>In wireshark, I filtered the packets by using http.request.method == "POST" as a filter. </p>
+<p><img src="Pictures/100000000000045A00000042C61A9015.png" style="width:6.9252in;height:0.4098in" /></p>
+<p><img src="Pictures/100000000000071E0000013A2B071EAF.png" style="width:6.9252in;height:2.0902in" /></p>
+<p>Packet Data</p>
+<p>I cleaned up the data from the packet and listed it below. </p>
+<p>HTML Form URL Encoded: application/x-www-form-urlencoded</p>
+<p>    Form item: "0&lt;text&gt;" = "Mr Hacker"</p>
+<p>           Value: Mr Hacker</p>
+<p>    Form item: "0&lt;label&gt;" = "Name"</p>
+<p>                Value: Name</p>
+<p>    Form item: "1&lt;text&gt;" = "Hacker@rockstarcorp.com"</p>
+<p>                Value: Hacker@rockstarcorp.com</p>
+<p>    Form item: "1&lt;label&gt;" = "Email"</p>
+<p>           Value: Email</p>
+<p>    Form item: "2&lt;text&gt;" = ""</p>
+<p>                Value: </p>
+<p>    Form item: "2&lt;label&gt;" = "Phone"</p>
+<p>        Key: 2&lt;label&gt;</p>
+<p>        Value: Phone</p>
+<p>    Form item: "3&lt;textarea&gt;" = "Hi Got The Blues Corp! This is a hacker that works at Rock Star Corp. Rock Star has left port 22, SSH open if you want to hack in. For 1 Milliion Dollars I will provide you the user and password!"</p>
+<p>        Key: 3&lt;textarea&gt;</p>
+<p>        Value: Hi Got The Blues Corp! This is a hacker that works at Rock Star Corp. Rock Star has left port 22, SSH open if you want to hack in. For 1 Milliion Dollars I will provide you the user and password!</p>
+<p>What layer of the OSI are we dealing with. </p>
+<p>Seeing how we are using wireshark to examine data encapsulated in a packets, there are multiple answers to this question. However since we already already captured the packet, and are just examining the data we are using the Application layer or Layer 7 of the OSI. </p>
+</body>
+</html>
