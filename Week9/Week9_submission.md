@@ -59,11 +59,7 @@ Mission 3
 </br></br>
 the command
 </br>
-nslookup
-
-\>set type=cname
-
-\>www.theforce.net
+nslookup -type=cname www.theforce.net
 </br>
 Results
 
