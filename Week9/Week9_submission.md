@@ -28,6 +28,9 @@ and
 
 starwars.com mail exchanger = asltx.2.google.com
 
+</br>
+</br>
+
 Mission 2
 
 The command
@@ -45,6 +48,11 @@ The reason that the alerts are going to spam is that the new ip of
 would have to run something like the following command
 
 v=spf1 a mx ip4:45.23.176.21 -all
+
+
+</br>
+</br>
+
 
 Mission 3
 
@@ -77,6 +85,11 @@ But the entry should be something like
 
 resistance.theforce.net canonical name = theforce.net
 
+
+</br>
+</br>
+
+
 Mission 4
 
 The command
@@ -95,6 +108,11 @@ the backup that looks like
 
 princessleia.site nameserver=ns2.galaxybackup.com
 
+
+</br>
+</br>
+
+
 Mission 5
 
 The OSPF shortest path from Batuu to Jedha without using N is.
@@ -102,11 +120,18 @@ The OSPF shortest path from Batuu to Jedha without using N is.
 Batuu,D, C, E, F, J, I, L, Q, T, V, Jedua. That should come out to 22
 hops, steps, whatever you want to call it.
 
+</br>
+</br>
+
+
 Mission 6
 
 Sender MAC address: IntelCor_55:98:ef (00:13:ce:55:98:ef)
 
 Sender IP address: 172.16.0.101 (172.16.0.101)
+
+</br>
+</br>
 
 Mission 7
 
