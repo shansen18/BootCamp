@@ -47,28 +47,37 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.4   | Linux            |
+| Jump-Box | Gateway  | 10.0.0.4   | Linux            |
 | Web1     | DVWA     | 10.0.0.5   | Linux            |
 | Web2     | DVWA     | 10.0.0.6   | Linux            |
 | Elk      | Elk      | 10.1.0.4   | Linux            |
+
+| Applications Used | Versions      |
+|-------------------|---------------|
+| Metricbeat        | 7.4.0 (amd64) |
+| Filebeat          | 7.4.0 (amd64) |
+| Docker            | 20.10.7       |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump-Box machine can accept connections from the Internet. I can only connect to the Jump-Box via my home computer using the SSH protocol. I secured the connection between my computer and the jump box, by only allowing inbound traffic from my homes public IP to ports 22 and 80. I further secured port 22 on the jumpbox by creating a new SSH-rsa key and only allowing connection from that SSH key to the jumpbox. Inside the jumpbox I created a container with it's own SSH-rsa key and shared the key with Web1 and Web2, only allowing SSH access to them from my jump box docker container.  
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+The ELK server is in it's own Azure Location (region). This means I had to setup a new network, and security group, for the Elk server, IP range 10.1.0.0/16. I setup a peering connection in order to allow an SSH connection through the Jump-Box. To secure the Elk server I set it's security group to only allow SSH connections from the Jump-Box private IP (10.0.0.4) and only if it was in the container, by entering in the Jump-Box containers SSH-rsa key. 
+  
+In order for my personal computer to connect to the ELK server, I created a rule that would allow my home IP address to connecto the the Elk server public IP address only on port 5601
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 | 10.0.0.4, (home IP)  |
+| Web1     | No                  | 10.0.0.4             |
+| Web2     | No                  | 10.0.0.4             |
+| Elk      | Yes                 | 10.0.0.4, (home IP)  |
+
+*Note, I did not note my personal IP. This is done for two reasons. 1. Security, I do not wish to disclose my personal IP address. 2. Because I do not lease a static IP, during the course of this project my personal IP changed several times, so I can't say that it is the same today as when I created the project.
 
 ### Elk Configuration
 
