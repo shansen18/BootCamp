@@ -9,12 +9,12 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 FileBeat
 
-![Filebeat playbook](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/filebeat-playbook.yml)
-![Filebeat Config](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/filebeat-config.yml)
+[Filebeat playbook](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/filebeat-playbook.yml)
+[Filebeat Config](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/filebeat-config.yml)
 
 MetricBeat
-![Metricbeat Playbook](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/metricbeat-playbook.yml)
-![Metricbeat Config](Week13\Scripts\ansible\files\metricbeat-config.yml)
+[Metricbeat Playbook](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/metricbeat-playbook.yml)
+[Metricbeat Config](Week13\Scripts\ansible\files\metricbeat-config.yml)
 
 
 This document contains the following details:
