@@ -2,15 +2,23 @@
 
 The files in this repository were used to configure the network depicted below.
 
-**Note**: The following image link needs to be updated. Replace `diagram_filename.png` with the name of your diagram image file.  
+  
 ![elk](Images/Elk_network_Map.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+FileBeat
+
+![Filebeat playbook](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/filebeat-playbook.yml)
+![Filebeat Config](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/filebeat-config.yml)
+
+MetricBeat
+![Metricbeat Playbook](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/metricbeat-playbook.yml)
+![Metricbeat Config](Week13\Scripts\ansible\files\metricbeat-config.yml)
+
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
