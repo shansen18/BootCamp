@@ -104,10 +104,10 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines, these Beats allow us to collect the following information from each machine:
 
-#Metricbeat
+# Metricbeat
 - Metricbeat gathers information about the system it is installed on. This includes the system resources and services. Just like file be it send the information to Logstash or Elasticsearch, and from there to Kibana where it can be vizualiz
 
-#Filebeat
+# Filebeat
 - Filebeat gathers information about the file system, and logs which files have changed and when. It then sends this information to be processed in Logstash or into Elasticsearch for indexing. From there Kibana is used to visualize the data.
 
 ### Using the Playbook
