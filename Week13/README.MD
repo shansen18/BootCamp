@@ -72,7 +72,7 @@ Only the Jump-Box machine can accept connections from the Internet. I can only c
 
 The ELK server is in it's own Azure Location (region). This means I had to setup a new network, and security group, for the Elk server, IP range 10.1.0.0/16. I setup a peering connection in order to allow an SSH connection through the Jump-Box. To secure the Elk server I set it's security group to only allow SSH connections from the Jump-Box private IP (10.0.0.4) and only if it was in the container, by entering in the Jump-Box containers SSH-rsa key. 
   
-In order for my personal computer to connect to the ELK server, I created a rule that would allow my home IP address to connecto the the Elk server public IP address only on port 5601
+In order for my personal computer to connect to the ELK server, I created a rule that would allow my home IP address to connect to the the Elk server public IP address only on port 5601
 
 A summary of the access policies in place can be found in the table below.
 
@@ -102,15 +102,22 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Web1 (10.0.0.5)
+- Web2 (10.0.0.6)
 
 We have installed the following Beats on these machines, these Beats allow us to collect the following information from each machine:
 
 #### Metricbeat
 - Metricbeat gathers information about the system it is installed on. This includes the system resources and services. Just like file be it send the information to Logstash or Elasticsearch, and from there to Kibana where it can be vizualized
 
+![Metricbeat picture](https://github.com/shansen18/BootCamp/blob/main/Week13/Images/Metricbeat_screen2.JPG)
+
+![Metricbeat picture2](https://github.com/shansen18/BootCamp/blob/main/Week13/Images/Metricbeat_screen2.JPG)
+
 #### Filebeat
 - Filebeat gathers information about the file system, and logs which files have changed and when. It then sends this information to be processed in Logstash or into Elasticsearch for indexing. From there Kibana is used to visualize the data.
+
+![Filebeat picture](https://github.com/shansen18/BootCamp/blob/main/Week13/Images/Filebeats_screen.JPG)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
