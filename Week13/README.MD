@@ -7,13 +7,14 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-FileBeat
+#### FileBeat
 
 [Filebeat playbook](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/filebeat-playbook.yml)
 
 [Filebeat Config](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/filebeat-config.yml)
 
-MetricBeat
+#### MetricBeat
+
 [Metricbeat Playbook](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/metricbeat-playbook.yml)
 
 [Metricbeat Config](Week13\Scripts\ansible\files\metricbeat-config.yml)
@@ -40,6 +41,7 @@ To access the Web1 and Web2 servers I created a "Jump-Box" which I can only conn
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs, files system, system resources, and system services. For the ELK server we installed two beats, Filebeat, and Metricbeat. 
 
 [Information on Filebeat](#Filebeat) 
+
 [Information on Metricbeat](#Metricbeat)
 
 
@@ -96,7 +98,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![result of docker ps on ELK machine](Week13\Images\Elk_docker_ps.JPG)
+![result of docker ps on ELK machine](\Images\Elk_docker_ps.JPG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -104,10 +106,10 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines, these Beats allow us to collect the following information from each machine:
 
-# Metricbeat
-- Metricbeat gathers information about the system it is installed on. This includes the system resources and services. Just like file be it send the information to Logstash or Elasticsearch, and from there to Kibana where it can be vizualiz
+#### Metricbeat
+- Metricbeat gathers information about the system it is installed on. This includes the system resources and services. Just like file be it send the information to Logstash or Elasticsearch, and from there to Kibana where it can be vizualized
 
-# Filebeat
+#### Filebeat
 - Filebeat gathers information about the file system, and logs which files have changed and when. It then sends this information to be processed in Logstash or into Elasticsearch for indexing. From there Kibana is used to visualize the data.
 
 ### Using the Playbook
