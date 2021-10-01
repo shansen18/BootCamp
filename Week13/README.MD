@@ -35,9 +35,13 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly available, in addition to restricting unautherized access to the network. I used the load balancer to create a redundancey the protects the DVWA by creating an instance of DVWA on 2 servers, Web1, and Web2, in the same load balancer pool. If one goes down the other instance will take over, thus protecting from a DDOS attack, or any other faults that my bring one server down. 
 To access the Web1 and Web2 servers I created a "Jump-Box" which I can only connect to via my home computer using the SSH protocol. I secured the connection between my computer and the jump box, by only allowing inbound traffic from my homes public IP to ports 22 and 80. I further secured port 22 on the jumpbox by creating a new SSH-rsa key and only allowing connection from that SSH key to the jumpbox. Inside the jumpbox I created a docker with it's own SSH-rsa key and shared the key with Web1 and Web2, only allowing SSH access to them from my jump box docker.  
 
+
+
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs, files system, system resources, and system services. For the ELK server we installed two beats, Filebeat, and Metricbeat. 
 
-Filebeat gathers information about the file system, and logs which files have changed and when. It then sends this information to be processed in Logstash or into Elasticsearch for indexing. From there Kibana is used to visualize the data. 
+[Information on Filebeat](#Filebeat) 
+[Information on Metricbeat](#Metricbeat)
+
 
 Metricbeat gathers information about the system it is installed on. This includes the system resources and services. Just like file be it send the information to Logstash or Elasticsearch, and from there to Kibana where it can be vizualized. 
 
@@ -81,30 +85,30 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+To configure the Elk machine, we used Ansible to automate the configuration. The reason Ansible was advantageous to install the Elk machine is that is automated the install. And in using Ansible we can easily install an program or image on multiple computers in a short amount of time, with the same configuration. 
+Using Ansible also gave us a chance to learn a little of YML scripting, and some of the nuances of it, particularly the fact tabs are not allowed for indentation.  
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Install Docker.io and pip3
+- Change VM Memory size of the ELK VM
+- Download and Configure the ELK docker container
+- Set Ports
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-**Note**: The following image link needs to be updated. Replace `docker_ps_output.png` with the name of your screenshot image file.  
-
-
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![result of docker ps on ELK machine](Week13\Images\Elk_docker_ps.JPG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
 
-We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+We have installed the following Beats on these machines, these Beats allow us to collect the following information from each machine:
 
-These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+#Metricbeat
+- Metricbeat gathers information about the system it is installed on. This includes the system resources and services. Just like file be it send the information to Logstash or Elasticsearch, and from there to Kibana where it can be vizualiz
+
+#Filebeat
+- Filebeat gathers information about the file system, and logs which files have changed and when. It then sends this information to be processed in Logstash or into Elasticsearch for indexing. From there Kibana is used to visualize the data.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
