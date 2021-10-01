@@ -17,7 +17,7 @@ MetricBeat
 
 [Metricbeat Playbook](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/files/metricbeat-playbook.yml)
 
-[Metricbeat Config](Week13\Scripts\ansible\files\metricbeat-config.yml)
+[Metricbeat Config](https://github.com/shansen18/BootCamp/blob/main/Week13\Scripts\ansible\files\metricbeat-config.yml)
 
 
 This document contains the following details:
@@ -49,7 +49,7 @@ Metricbeat gathers information about the system it is installed on. This include
 
 
 The configuration details of each machine may be found below
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -98,7 +98,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![result of docker ps on ELK machine](\Images\Elk_docker_ps.JPG)
+![result of docker ps on ELK machine](https://github.com/shansen18/BootCamp/blob/c5c119ebc9fcfd68650964e54e3d3cdcefdd1a68/Week13/Images/Elk_docker_ps.JPG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
