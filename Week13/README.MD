@@ -124,13 +124,13 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
--Copy the filebeat.yml and metricbeat.yml file to the /etc/ansible/roles/files/ directory.
+-Copy the [filebeat.yml](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/filebeat-playbook.yml) and [metricbeat.yml](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/metricbeat-playbook.yml) file to the /etc/ansible/roles/files/ directory.
 
 
 -Update the configuration files to include the Private IP of the Elk-Server to the ElasticSearch and Kibana sections of the configuration file.
 
 
--Create a new ansible-playbook filebeat-playbook.yml in the /etc/ansible/roles/ directory that will install, drop in the filebeat.yml and metricbeat.yml files from the /etc/ansible/roles/files/ directory, uodate the configuration files, and start the service for both Filebeat and Metricbeat.
+-Update the configuration files, and start the service for both Filebeat and Metricbeat.
 
 
 Run the playbook, and navigate to ELk-Server to check that the installation worked as expected. [docker ps]
