@@ -21,7 +21,7 @@ MetricBeat:
 
 
 This document contains the following details:
-- [Description of the Topology](#-Description-of-the-Topology)
+- [Description of the Topology](#Description-of-the-Topology)
 - Access Policies
 - ELK Configuration
   - Beats in Use
