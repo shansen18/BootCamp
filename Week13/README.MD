@@ -131,7 +131,7 @@ SSH into the control node and follow the steps below:
 
 -Copy the [Filebeat.yml](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/filebeat-playbook.yml) 
 
- [Metricbeat-config.yml] (https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/filebeat-config.yml)
+ [Metricbeat-config.yml](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/filebeat-config.yml)
 
  [Metricbeat.yml](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/metricbeat-playbook.yml)
  
