@@ -90,6 +90,8 @@ A summary of the access policies in place can be found in the table below.
 To configure the Elk machine, we used Ansible to automate the configuration. The reason Ansible was advantageous to install the Elk machine is that is automated the install. And in using Ansible we can easily install an program or image on multiple computers in a short amount of time, with the same configuration. 
 Using Ansible also gave us a chance to learn a little of YML scripting, and some of the nuances of it, particularly the fact tabs are not allowed for indentation.  
 
+You can use [Elk.yml](https://github.com/shansen18/BootCamp/blob/main/Week13/Scripts/ansible/Elk.yml) to install the playbook
+
 The playbook implements the following tasks:
 - Install Docker.io and pip3
 - Change VM Memory size of the ELK VM
@@ -120,11 +122,24 @@ We have installed the following Beats on these machines, these Beats allow us to
 ![Filebeat picture](https://github.com/shansen18/BootCamp/blob/main/Week13/Images/Filebeats_screen.JPG)
 
 ### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+In order to use the playbook, you will need to have an Ansible control node already configured.
 
+
+
+ Assuming you have such a control node provisioned: 
 SSH into the control node and follow the steps below:
 
--Copy the [filebeat.yml](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/filebeat-playbook.yml) and [metricbeat.yml](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/metricbeat-playbook.yml) file to the /etc/ansible/roles/files/ directory.
+-Copy the [Filebeat.yml](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/filebeat-playbook.yml) 
+
+ [Metricbeat-config.yml] (https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/filebeat-config.yml)
+
+ [Metricbeat.yml](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/metricbeat-playbook.yml)
+ 
+ and
+
+ [Metricbeat-config.yml](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/files/metricbeat-config.yml)
+
+  files to the /etc/ansible/roles/files/ directory.
 
 
 -Update the configuration files to include the Private IP of the Elk-Server to the ElasticSearch and Kibana sections of the configuration file.
@@ -133,13 +148,15 @@ SSH into the control node and follow the steps below:
 -Update the configuration files, and start the service for both Filebeat and Metricbeat.
 
 
-Run the playbook, and navigate to ELk-Server to check that the installation worked as expected. [docker ps]
+-Run the playbook, and navigate to ELk-Server to check that the installation worked as expected. [docker ps]
+
+-To verify ELK is running in a web browser navigate to http://"elk machines IP":5601/app.kibana#/home"
 
 
-Which file is the playbook? Where do you copy it? The playbook is called filebeat-playbook.yml. You copy the file to the "/etc/ansible/hosts/" directory.
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+##  Other files that maybe needed.
+
+[hosts](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/hosts). This file goes into the ansible folder, and designates the IPs of Web1, Web2, and the Elk machine, for ansible. The IP address can be changed as needed
+
+[Ansible.cfg](https://github.com/shansen18/BootCamp/blob/e231fbf7ce9d53a5f3466c8d9b5205b03cbb63ec/Week13/Scripts/ansible/ansible.cfg) This is the ansible.cfg file. Only thing we changed was line 107 the default user to use for playbooks.
+
