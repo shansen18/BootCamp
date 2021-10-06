@@ -22,11 +22,9 @@ MetricBeat:
 
 This document contains the following details:
 - [Description of the Topology](#Description-of-the-Topology)
-- Access Policies
-- ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
-- How to Use the Ansible Build
+- [Access Policies](#Access-Policies)
+- [ELK Configuration](#ELK-Condifuration)
+- [How to Use the Ansible Build](#Using-the-Playbook)
 
 
 ### Description of the Topology
