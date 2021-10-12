@@ -172,11 +172,13 @@ X-XSS-Protection: 1; mode=block
 Answer the following questions about monoliths and microservices:
 
 26. What are the individual components of microservices called?
-    I believe you are looking for containers, this is what holds the microservices
+    User interface, Microservices, and databases. 
 
 27. What is a service that writes to a database and communicates to other services?
+    API - Application Programing Interface
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
+        I believe you are looking for containers, this is what holds the microservices
 
 #### Deploying and Testing a Container Set
 
