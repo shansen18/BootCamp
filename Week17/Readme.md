@@ -22,7 +22,6 @@ Answer: searchsploit icecast
 
 
 
-
 Now that we know which exploits are available to us, let's start Metasploit:
 
 
@@ -41,6 +40,7 @@ Run the command to search for the Icecast module:
 
 Answer: search icecast
 
+![search_icecast](https://github.com/shansen18/BootCamp/blob/d4348fcf0f79e669ebb3d1948b923f38479c7b90/Week17/images/Search_Icecast.JPG)
 
 
 Run the command to use the Icecast module:
@@ -49,7 +49,7 @@ Note: Instead of copying the entire path to the module, you can use the number i
 Answer: use 
 
 
-
+![use_exploit](https://github.com/shansen18/BootCamp/blob/d4348fcf0f79e669ebb3d1948b923f38479c7b90/Week17/images/Use_exploit.JPG)
 
 
 Set the RHOST to the target machine.
