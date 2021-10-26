@@ -46,6 +46,10 @@ use recon/domains-vulnerabilities/xssed
 Is Altoro Mutual vulnerable to XSS: 
 Yes, demo.testfire.net appears to be vulnerable to XSS based on recon-ng. 
 
+![loadrecon](https://github.com/shansen18/BootCamp/blob/d4348fcf0f79e669ebb3d1948b923f38479c7b90/Week16/images/ReconNG.JPG)
+
+![testfire_vuln](https://github.com/shansen18/BootCamp/blob/d4348fcf0f79e669ebb3d1948b923f38479c7b90/Week16/images/testfire_vulns.JPG)
+
 ### Step 5: Zenmap
 
 Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
@@ -58,10 +62,14 @@ Your client has asked that you help identify any vulnerabilities with their file
 
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
+    vsFTPd version 2.3.4 backdoor
 
-  2. Why is it dangerous:
 
-  3. What mitigation strategies can you recommendations for the client to protect their server:
+  2. Why is it dangerous: As the exploit name says this is a backdoor into the system. It appears as a smiley face. Using this exploit gives you root privilages in the victims computer, as shown in the picture below.
+
+
+
+  3. What mitigation strategies can you recommendations for the client to protect their server: Update and patch the server, this is an old exploit, and aparrently was fixed within a day. 
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
