@@ -56,17 +56,20 @@ Your client has asked that you help identify any vulnerabilities with their file
 
 - Command for Zenmap to run a service scan against the Metasploitable machine: 
  
+
+
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
 
 - Zenmap vulnerability script command: 
 
-- Once you have identified this vulnerability, answer the following questions for your client:
+- Once you have identified this vulnerability, answer the following questions for  your client:
   1. What is the vulnerability:
     vsFTPd version 2.3.4 backdoor
 
 
   2. Why is it dangerous: As the exploit name says this is a backdoor into the system. It appears as a smiley face. Using this exploit gives you root privilages in the victims computer, as shown in the picture below.
 
+![backdoor](https://github.com/shansen18/BootCamp/blob/main/Week16/images/exploit.JPG)
 
 
   3. What mitigation strategies can you recommendations for the client to protect their server: Update and patch the server, this is an old exploit, and aparrently was fixed within a day. 
