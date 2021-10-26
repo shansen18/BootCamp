@@ -29,6 +29,8 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
   4. What is the IP address of the DNS server:
     65.61.137.64 -65.61.137.127
 
+    ![whois](https://github.com/shansen18/BootCamp/blob/main/Week16/images/whois.JPG)
+
 #### Step 3: Shodan
 
 - What open ports and running services did Shodan find:
