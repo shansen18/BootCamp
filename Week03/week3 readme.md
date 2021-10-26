@@ -1,9 +1,17 @@
 
 In this weeks homework assignment, we conducted an investigigation into the Lucky Duck casinos losses at the roulette table. 
 
-The first step was to analys the players who were playing during the time off losses. So to do this, I first isolated the logsthat contain the losses into its own folder.  I used the grep command in the following syntax grep - *_win* > Roulette_Losses.  This would go through the log files and extract the lines associated with a negative number indicating a loss, and copy them to a file named Roulette_Losses. I then looked through this file and found the suspect player "Miley Schmidt". The homework asked how many times she played so I ran grep 'Mylie' Roulette_Losses | wc -l >> Roulette_Losses. This two part command would search the Roulette_Losses file to find any occurance of Mylie, then the wc would could how many times Mylie appeared and input that number back into the Roulette_Losses file. 
+The first step was to analys the players who were playing during the time off losses. So to do this, I first isolated the logs that contain the losses into its own folder.  I used the grep command in the following syntax grep - *_win* > Roulette_Losses.  This would go through the log files and extract the lines associated with a negative number indicating a loss, and pipe them to a file named Roulette_Losses. 
+
+![Rouletter_losses](https://github.com/shansen18/BootCamp/blob/main/Week03/Images/Roulette%20Losses%20including%20count.JPG)
+
+I then looked through this file and found the suspect player "Miley Schmidt". The homework asked how many times she played so I ran grep 'Mylie' Roulette_Losses | wc -l >> Roulette_Losses. This two part command would search the Roulette_Losses file to find any occurance of Mylie, then the wc would could how many times Mylie appeared and input that number back into the Roulette_Losses file. 
+
+![Gep to find player](https://github.com/shansen18/BootCamp/blob/main/Week03/Images/grep%20to%20find%20how%20many%20tmes%20Miley%20played.JPG)
 
 Next the homework wanted us to move onto to see if there was a dealer working at the roulette table at the times of the losses. So looking into the results of the Roulette_Losses file, I found that Miley had consistantly played at 5am, 8am, 2pm, every day, and 8pm, and 11pm on the 10th and 12th.  Using that knowledge I came up with the script in bad_dealer.sh it returned the result of Billy Jones.  I then modified the script and added a grep command plus word count to count how many times he was working and move it to the Dealer_working_during_losses file. I also added it to the Notes_Dealer_Analysis file. 
+
+![bad dealer](https://github.com/shansen18/BootCamp/blob/main/Week03/Scripts/bad_dealer.sh)
 
 Under step four of the homework, it asked us to create a shellscript to see what dealer was working on a given date at a given time it is called roulette_dealer_finder_by_time.sh. The way the homework asked for it to be done was something like script.sh  variable1 variable2 variable3.  The script would then call those variable and produce a name. When I sat down and thought about this aproach I didn't like it, I knew how it would run, but whos to say if I gave the script to a manager he would know how it runs, and rememeber to put the variable into the order they needed to be in. So I decided to make the script more user friendly, by asking the user to input the variable and what the variable is. Once you put in the variables, I had the script clear the screen, and turn a message saying "the dealer on (date) at (time) was (Dealer Name)"
 
