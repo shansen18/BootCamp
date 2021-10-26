@@ -18,7 +18,8 @@ write access.
 
 - Command to set permissions (if needed): sudo chmod 600 gshadow
 
-![chmod gshadow](https://github.com/shansen18/BootCamp/blob/d9837549085c8c233ae4d5c850d5b89d1ed93b23/Week04%20homework/Images/ls_gshadow.png)
+![chmod gshadow](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/ls_gshadow.png)
+
 
 3\. Permissions on \`/etc/group\` should allow \`root\` read and write
 access, and allow everyone else read access only.
@@ -27,8 +28,7 @@ access, and allow everyone else read access only.
 
 - Command to set permissions (if needed): sudo chmod 644 group
 
-![](Pictures/10000000000002D60000008A7969CA99.png){width="6.9217in"
-height="1.3126in"}
+![chmod groups](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/ls_group.png)
 
 4\. Permissions on \`/etc/passwd\` should allow \`root\` read and write
 access, and allow everyone else read access only.
