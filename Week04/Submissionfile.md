@@ -9,7 +9,8 @@ write access.
 
 - Command to set permissions (if needed): sudo chmod 600 shadow
 
-![chmod shadow](Images\ls_shadow.png)
+![](Pictures/100000000000030C0000006E1B35054B.png){width="6.9217in"
+height="0.9728in"}
 
 2\. Permissions on \`/etc/gshadow\` should allow only \`root\` read and
 write access.
@@ -18,7 +19,8 @@ write access.
 
 - Command to set permissions (if needed): sudo chmod 600 gshadow
 
-![chmod gshadow](https://github.com/shansen18/BootCamp/blob/d9837549085c8c233ae4d5c850d5b89d1ed93b23/Week04%20homework/Images/ls_gshadow.png)
+![](Pictures/100000000000044C0000005C1423F681.png){width="6.9217in"
+height="0.5756in"}
 
 3\. Permissions on \`/etc/group\` should allow \`root\` read and write
 access, and allow everyone else read access only.
