@@ -56,9 +56,13 @@ Your client has asked that you help identify any vulnerabilities with their file
 
 - Command for Zenmap to run a service scan against the Metasploitable machine: 
  
+  I would use nmap for the commands, even though zen map gives a nice gui, I find it repeditive to have to use zenmap when it basically runs nmap. 
 
+  So in this case I would use sudo nmap -sV 192.168.0.10 
 
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
+
+  sudo nmap -sV --script=vuln 192.168.0.10
 
 - Zenmap vulnerability script command: 
 
