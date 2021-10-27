@@ -92,3 +92,14 @@ This week we were introduced to computer Networking. This included concepts such
 During Week 7 homework we used nmap, and wireshark to analyze the network for a ficticious company called RockStar Corp. We were to find any vulnerabilities, as well as to scan the PCAP for any malicious activity. 
 
 [Week 8 Submission file](https://github.com/shansen18/BootCamp/blob/a3328c09c7441dc24fe7ac95f1f1f78a46634e50/Week08/README.md))
+
+
+
+
+## Week 9 Networking Fundamentals II and CTF
+
+During this week we focused mainly on Wireshark and Pcap analysis and nslookup. We also used Aircrack-ng to obtain wireless keys and decrypt the data. During day 3, we did some CTFs based off Wireshark pcaps. 
+
+During this weeks homework we used nslookup and wireshark to figure out why mail was no longer getting to the servers. 
+
+[Week 9 Submission File](https://github.com/shansen18/BootCamp/blob/9f6d93caa4ba4ac254fdc116a0428b74ecf64eca/Week09/README.md)

@@ -1,10 +1,10 @@
-Mission 1
-</br></br>
-The nslookup command used.
-</br>
+## Mission 1
+
+**The nslookup command used.**
+
 nslookup -type=MX starwars.com
-</br>
-</br>
+
+
 mail servers are
 
 starwars.com mail exchanger = 1 aspmx.l.google.com.
@@ -29,17 +29,19 @@ and
 
 starwars.com mail exchanger = asltx.2.google.com
 
-</br>
-</br>
+![nslookup email](https://github.com/shansen18/BootCamp/blob/abf7fcecb0f2dc4f1f12063b03d67045d76889ce/Week09/Screen%20Shots/nslookup%20email%20servers.JPG)
 
-Mission 2
-</br></br>
-The command
-</br>
+
+
+## Mission 2
+
+
+**The command?**
+
 nslookup -type=txt theforce.net
-</br>
+
 results
-</br>
+
 theforce.net text = \"v=spf1 a mx mx:smtp.secureserver.net
 include:aspmx.googlemail.com ip4:104.156.250.80 ip4:45.63.15.159
 ip4:45.63.4.215\"
@@ -50,17 +52,16 @@ would have to run something like the following command
 
 v=spf1 a mx ip4:45.23.176.21 -all
 
-
-</br>
-</br>
+![nslookup spf](https://github.com/shansen18/BootCamp/blob/abf7fcecb0f2dc4f1f12063b03d67045d76889ce/Week09/Screen%20Shots/nslookup%20spf.JPG)
 
 
-Mission 3
-</br></br>
-the command
-</br>
+##Mission 3
+
+
+**the command**
+
 nslookup -type=cname www.theforce.net
-</br>
+
 Results
 
 Server: 192.168.0.1
@@ -71,10 +72,10 @@ Non-authoritative answer:
 
 www.theforce.net canonical name = theforce.net.
 </br>
-The reason that resistance.theforce.net isn\'t redirecting to
+The reason that resistance.theforce.net isn't redirecting to
 theforce.net is that there is not an entry in the cname redirecting it
 the theforce.net.
-</br>
+
 To fix this an entry needs to be made into the cname records. There is
 no one command to do this as it depends on the DNS provider.
 
@@ -82,17 +83,17 @@ But the entry should be something like
 
 resistance.theforce.net canonical name = theforce.net
 
-
-</br>
-</br>
+![nslookup cnames](https://github.com/shansen18/BootCamp/blob/abf7fcecb0f2dc4f1f12063b03d67045d76889ce/Week09/Screen%20Shots/nslookup%20cnames.JPG)
 
 
-Mission 4
-</br></br>
-The command
-</br>
+
+## Mission 4
+
+
+**The command**
+
 nslookup -type=NS princessleia.site
-</br>
+
 ResultsNon-authoritative answer:
 
 princessleia.site nameserver = ns25.domaincontrol.com.
@@ -106,35 +107,32 @@ the backup that looks like
 princessleia.site nameserver=ns2.galaxybackup.com
 
 
-</br>
-</br>
+
+## Mission 5
 
 
-Mission 5
-</br></br>
 The OSPF shortest path from Batuu to Jedha without using N is.
 
 Batuu,D, C, E, F, J, I, L, Q, T, V, Jedua. That should come out to 22
 hops, steps, whatever you want to call it.
 
-</br>
-</br>
+![galaxy network](https://github.com/shansen18/BootCamp/blob/main/Week09/Screen%20Shots/Galaxy_Network_map.png)
 
 
-Mission 6
-</br></br>
+## Mission 6
+
 
 Sender MAC address: IntelCor_55:98:ef (00:13:ce:55:98:ef)
 
 Sender IP address: 172.16.0.101 (172.16.0.101)
 
-</br>
-</br>
 
-Mission 7
-</br></br>
-Command
-</br>
+
+## Mission 7
+
+
+**Command**
+
 nslookup -type=txt princessleia.site
 
 Result
@@ -142,3 +140,6 @@ Result
 princessleia.site text = \"Run the following in a command line: telnet
 towel.blinkenlights.nl or as a backup access in a browser:
 www.asciimation.co.nz\"
+
+
+[Mission 7 result](https://github.com/shansen18/BootCamp/blob/abf7fcecb0f2dc4f1f12063b03d67045d76889ce/Week09/Screen%20Shots/Mission%207%20result.JPG)
