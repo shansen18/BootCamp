@@ -9,7 +9,7 @@ write access.
 
 - Command to set permissions (if needed): sudo chmod 600 shadow
 
-![chmod shadow](Images\ls_shadow.png)
+![chmod shadow](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/ls_shadow.png)
 
 2\. Permissions on \`/etc/gshadow\` should allow only \`root\` read and
 write access.
@@ -57,26 +57,25 @@ sudo useradd sara
 
 sudo useradd admin
 
-![](Pictures/1000000000000387000000DBCEA9A0F8.png){width="6.9217in"
-height="1.6756in"}
+![user add](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/usseradd.png)
 
 2\. Ensure that only the \`admin\` has general sudo access.
 
 - Command to add \`admin\` to the \`sudo\` group: sudo usermod -aG sudo
 admin
 
-![](Pictures/10000000000002AC00000031644CEB76.png){width="6.9217in"
-height="0.4925in"}
+![user mod](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/usermod.png)
 
-![](Pictures/1000000000000294000000450DBBFC31.png){width="6.8717in"
-height="0.7154in"}
+![user mod results](https://github.com/shansen18/BootCamp/blob/main/Week04/Images/usermod_results.png)
+
 
 ##\# Step 3: Create User Group and Collaborative Folder
 
-![](Pictures/100000000000029300000037FB735C4F.png){width="6.861in"
-height="0.5693in"}1. Add an \`engineers\` group to the system.
-
 - Command to add group: sudo addgroup engineers
+
+![addgroup](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/addgroup.png)
+
+
 
 2\. Add users \`sam\`, \`joe\`, \`amy\`, and \`sara\` to the managed
 group.
@@ -91,15 +90,13 @@ sudo usermod -aG engineers amy
 
 sudo usermod -aG engineers sara
 
-![](Pictures/10000000000002A90000005043D7E38D.png){width="6.9217in"
-height="0.8098in"}
+![usermod](ttps://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/usermod_sam.png)
 
 3\. Create a shared folder for this group at \`/home/engineers\`.
 
 - Command to create the shared folder: sudo mkdir /home/engineers
 
-![](Pictures/10000000000003690000001EEAE140CF.png){width="6.9217in"
-height="0.2339in"}
+![mkdir](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/mkdir_engineer.png)
 
 4\. Change ownership on the new engineers\' shared folder to the
 \`engineers\` group.
@@ -109,15 +106,13 @@ group: sudo chgrp engineers engineer from the home file.
 
 Sudo chown :engineers engineers
 
-![](Pictures/10000000000002E10000001826EF48CE.png){width="6.922in"
-height="0.222in"}
+![chown](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/sudo_chown.png)
 
 ##\# Step 4: Lynis Auditing
 
 1\. Command to install Lynis: apt-get install lynis
 
-![](Pictures/10000000000006F00000010BDCD85929.png){width="6.9217in"
-height="1.1618in"}
+![aptget](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/install_lynis.png)
 
 2\. Command to see documentation and instructions: man lynis
 
@@ -128,14 +123,13 @@ the system.
 
 - Screenshot of report output:
 
-![](Pictures/10000000000006E300000355769643FD.png){width="6.9217in"
-height="3.4291in"}![](Pictures/10000000000006540000032882E8E676.png){width="6.9217in"
-height="3.45in"}![](Pictures/10000000000006BD0000018397FEAB6C.png){width="6.9217in"
-height="1.55in"}![](Pictures/10000000000006F20000015C610A4958.png){width="6.9217in"
-height="1.3516in"}
+![hardening1](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/hardening1.png)
+![Hardening2](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/hardening2.png)
+![Hardening3](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/hardening3.png)
+![Hardening4](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/hardening4.png)
+![Hardening5](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/hardening5.png)
 
-![](Pictures/100000000000068E00000358B3EC3138.png){width="6.9217in"
-height="3.5291in"}
+
 
 ##\# Bonus
 
@@ -150,8 +144,7 @@ harden the system.
 
 - Screenshot of end of sample output:
 
-![](Pictures/1000000000000429000000DE006875B4.png){width="6.9217in"
-height="1.4398in"}
+![chkrootkit](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/chkrootkit.png)
 
 \-\--
 
