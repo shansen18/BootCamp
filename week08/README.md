@@ -7,7 +7,7 @@ addresses. It was to create a file with all the ip\'s in it and then run
 the fping -f (file name). In making the file I had to remove the CITR
 range at the end in order to get a response.
 
-![ping range](https://github.com/shansen18/BootCamp/blob/main/week08/screen%20shots/Ping%20results.jpg)
+![ping range](https://github.com/shansen18/BootCamp/blob/main/Week08/screen%20shots/Ping%20results.jpg)
 
 Mitigation against vulnerabilities.
 
@@ -22,7 +22,7 @@ modle.
 
 I used the command sudo nmap -sS 167.172.144.11
 
-![nmap](https://github.com/shansen18/BootCamp/blob/main/week08/screen%20shots/NMAP.jpg)
+![nmap](https://github.com/shansen18/BootCamp/blob/main/Week08/screen%20shots/NMAP.jpg)
 
 Mitigation against vulnerabilities.
 
@@ -42,8 +42,8 @@ ipaddress
 
 From the I ran nslookup 98.137.246.8
 
-![host](https://github.com/shansen18/BootCamp/blob/main/week08/screen%20shots/hosts%20file.jpg)
-![nslookup](https://github.com/shansen18/BootCamp/blob/main/week08/screen%20shots/nslookup.jpg)
+![host](https://github.com/shansen18/BootCamp/blob/main/Week08/screen%20shots/hosts%20file.jpg)
+![nslookup](https://github.com/shansen18/BootCamp/blob/main/Week08/screen%20shots/nslookup.jpg)
 
 **Mitigation against vulnerabilities.**
 
@@ -73,9 +73,9 @@ downloaded it and opened in wireshark
 In wireshark, I filtered the packets by using http.request.method ==
 \"POST\" as a filter.
 
-![post1](https://github.com/shansen18/BootCamp/blob/main/week08/screen%20shots/post1.png)
+![post1](https://github.com/shansen18/BootCamp/blob/main/Week08/screen%20shots/post1.png)
 
-![post2](https://github.com/shansen18/BootCamp/blob/main/week08/screen%20shots/post%20packet.jpg)
+![post2](https://github.com/shansen18/BootCamp/blob/main/Week08/screen%20shots/post%20packet.jpg)
 
 **Packet Data**
 
