@@ -48,4 +48,4 @@ During this week we mainly focused on backup and restoring data with the Tar com
 
 For this weeks homework we created a tarfile that excludes a directory, wrote some bash scripts for system usage report, manged log files, and sizes, and created an auditing system. 
 
-[Week 5 Submission File](https://github.com/shansen18/BootCamp/blob/eedaa11254ac1140d870105fb0637d3da36c17a0/Week05/Backups_Cron_Homework.)
+[Week 5 Submission File](https://github.com/shansen18/BootCamp/blob/eedaa11254ac1140d870105fb0637d3da36c17a0/Week05/Backups_Cron_Homework.md)
