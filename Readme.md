@@ -39,3 +39,13 @@ In this week we focused on some of the fundamentals of Linux administration. Som
 For this weeks homework we ensured permissions to sensitive Linux files, created new users and groups, and placed the new users in the new group. We also ran a report from Lynis, to audit the system and see what can be done to further harden it from attacks. 
 
 [Week 4 Submission File](https://github.com/shansen18/BootCamp/blob/d51702af2d7d8bc1310e669612d3d7d6ab4f7be0/Week04/Submissionfile.md)
+
+
+
+## Week 5 Archiving and Logging Data
+
+During this week we mainly focused on backup and restoring data with the Tar command. We also expanded on the idea of backup be using cron to schedule backup jobs as well as log size management using logrotate. We also installed and configured audit rules using auditd. 
+
+For this weeks homework we created a tarfile that excludes a directory, wrote some bash scripts for system usage report, manged log files, and sizes, and created an auditing system. 
+
+[Week 5 Submission File](https://github.com/shansen18/BootCamp/blob/eedaa11254ac1140d870105fb0637d3da36c17a0/Week05/Backups_Cron_Homework.)

@@ -23,7 +23,9 @@ tar czf Javaless_Docs.tar \--exclude=TarDocs/Documents/Java TarDocs
 3\. Command to ensure \`Java/\` is not in the new \`Javaless_Docs.tar\`
 archive:
 
-tar tvvf Javaless_Docs.tar \| grep Java
+tar tvvf Javaless_Docs.tar | grep Java
+
+![grep java](https://github.com/shansen18/BootCamp/blob/eedaa11254ac1140d870105fb0637d3da36c17a0/Week05/screenshots/Making%20sure%20Java%20was%20not%20included%20in%20tar.JPG)
 
 \*\*Bonus\*\*
 
@@ -45,6 +47,8 @@ tar file. Why create a tarfile at the same time as extracting it?
 
 in sudo\'s crontab I put: \* 6 \* \* 3 tar cvf /auth_backup.tgz
 /var/log/auth.log \>/dev/null 2>&1
+
+![cron](https://github.com/shansen18/BootCamp/blob/eedaa11254ac1140d870105fb0637d3da36c17a0/Week05/screenshots/Crontab%20edit%20to%20backup%20authlog.jpg)
 
 \-\--
 
@@ -75,6 +79,10 @@ df -h \| head -n 4 \| tail -n 1 \| awk \'{print \$1,\$3,\$4,\$5,\$6}\'
 \>\~/backups/freedisk/free_disk.txt
 
 \`\`\`
+
+![system script](https://github.com/shansen18/BootCamp/blob/eedaa11254ac1140d870105fb0637d3da36c17a0/Week05/screenshots/system_script.JPG)
+
+
 
 3\. Command to make the \`system.sh\` script executable:
 
@@ -124,6 +132,9 @@ cd
 
 \-\--
 
+![authlog config](https://github.com/shansen18/BootCamp/blob/eedaa11254ac1140d870105fb0637d3da36c17a0/Week05/screenshots/authlog%20_config.JPG)
+
+
 ##\# Bonus: Check for Policy and File Violations
 
 1\. Command to verify \`auditd\` is active:
@@ -142,6 +153,9 @@ max_log_file = 35
 
 \`\`\`
 
+![auditd.conf](https://github.com/shansen18/BootCamp/blob/eedaa11254ac1140d870105fb0637d3da36c17a0/Week05/screenshots/auditd.conf%20settings.JPG)
+
+
 3\. Command using \`auditd\` to set rules for \`/etc/shadow\`,
 \`/etc/passwd\` and \`/var/log/auth.log\`:
 
@@ -156,6 +170,9 @@ max_log_file = 35
 -w /etc/auth.log -k authlog_audit -p wra
 
 \`\`\`
+
+![auditd rules](https://github.com/shansen18/BootCamp/blob/eedaa11254ac1140d870105fb0637d3da36c17a0/Week05/screenshots/adding%20new%20audit%20rules.JPG)
+
 
 4\. Command to restart \`auditd\`:
 
@@ -175,32 +192,11 @@ report that lists account modifications:
 8\. Command to use \`auditd\` to watch \`/var/log/cron\`:
 
 9\. Command to verify \`auditd\` rules:
+sudo auditctl -l
+
+[audit veridy](https://github.com/shansen18/BootCamp/blob/eedaa11254ac1140d870105fb0637d3da36c17a0/Week05/screenshots/verify%20audit%20rules.JPG)
 
 \-\--
-
-##\# Bonus (Research Activity): Perform Various Log Filtering Techniques
-
-1\. Command to return \`journalctl\` messages with priorities from
-emergency to error:
-
-1\. Command to check the disk usage of the system journal unit since the
-most recent boot:
-
-1\. Comand to remove all archived journal files except the most recent
-two:
-
-1\. Command to filter all log messages with priority levels between zero
-and two, and save output to \`/home/sysadmin/Priority_High.txt\`:
-
-1\. Command to automate the last command in a daily cronjob. Add the
-edits made to the crontab file below:
-
-\`\`\`bash
-
-\[Your solution cron edits here\]
-
-\`\`\`
-
 \-\--
 
 Â© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights
