@@ -1,6 +1,6 @@
 ## Unit 11 Submission File: Network Security Homework
 
-##\# Part 1: Review Questions
+### Part 1: Review Questions
 
 #### Security Control Types
 
@@ -13,7 +13,7 @@ type of security control?
 
 Answer:
 
-For this excersise I would say that they are physical. However I would
+For this exercise I would say that they are physical. However I would
 also view them as preventative, because a normal criminal would see
 those and find another target.
 
@@ -22,7 +22,7 @@ practices are what type of security control?
 
 Answer:
 
-The question answered it, it\'s the policies, procedures, and awareness.
+The question answered it, it's the policies, procedures, and awareness.
 
 3\. Encryption, biometric fingerprint readers, firewalls, endpoint
 security, and intrusion detection systems are what type of security
@@ -34,15 +34,15 @@ These are all part of the internal network.
 
 #### Intrusion Detection and Attack indicators
 
-1\. What\'s the difference between an IDS and an IPS?
+1\. What's the difference between an IDS and an IPS?
 
 Answer:
 
-IDS is an intrusion detection system, as it\'s name says it detects and
+IDS is an intrusion detection system, as it's name says it detects and
 alerts to an intrusion. The alert then should be acted upon by a person.
 
 IPS is an intrusion prevention system. The prevention system then
-descides to allow or deny the incoming packets.
+decides to allow or deny the incoming packets.
 
 2\. What\'s the difference between an Indicator of Attack and an
 Indicator of Compromise?
@@ -53,9 +53,9 @@ Based on what I have been able to find is that the IOA (indicator of
 attack) is data that points to an attach and also gathered during the
 attack, that is used to mitigate the attack or stop it all together.
 
-The IOC (Indicator of compramise) is the digital forensic data gathered
+The IOC (Indicator of compromise) is the digital forensic data gathered
 after the attack. This data can by security professionals to help them
-find possiable vectors for breaches, and fix them, or implement better
+find possible vectors for breaches, and fix them, or implement better
 monitoring policies.
 
 #### The Cyber Kill Chain
@@ -106,8 +106,8 @@ Answer: Reconnaissance
 
 3\. What kind of attack is indicated?
 
-Answer: To me this alert would indicate that some one might be scanning
-the VNC ports to see if they can perform a VNC expoilt.
+Answer: To me this alert would indicate that someone might be scanning
+the VNC ports to see if they can perform a VNC exploit.
 
 Snort Rule #2
 
@@ -150,7 +150,7 @@ Answer:
 alert tcp \$EXTERNAL_NET any-\> \$HOME_NET 4444 (msg:\"Potential exploit
 on port 4444\")
 
-##\# Part 2: \"Drop Zone\" Lab
+### Part 2: \"Drop Zone\" Lab
 
 #### Log into the Azure \`firewalld\` machine
 
@@ -177,6 +177,8 @@ sudo apt -y remove ufw
 
 \`\`\`
 
+![disable ufw](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/disable%20and%20unistall%20ufw.JPG)
+
 #### Enable and start \`firewalld\`
 
 By default, these service should be running. If not, then run the
@@ -198,6 +200,9 @@ sudo systemctl start firewalld
 Note: This will ensure that \`firewalld\` remains active after each
 reboot.
 
+![install firewalld](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/install%20firewalld.JPG)
+
+
 #### Confirm that the service is running.
 
 \- Run the command that checks whether or not the \`firewalld\` service
@@ -208,6 +213,8 @@ is up and running.
 sudo firewall-cmd --state
 
 \`\`\`
+
+![firewalld state](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/firealld%20enable%20start%20state.JPG )
 
 #### List all firewall rules currently configured.
 
@@ -223,6 +230,8 @@ sudo firewall-cmd --list-all
 
 \`\`\`
 
+![firewalld list-all0(https://github.com/shansen18/BootCamp/blob/main/Week11/Screen%20Shots/firewall%20list%20all%201.JPG)]
+
 \- Take note of what Zones and settings are configured. You many need to
 remove unneeded services and settings.
 
@@ -237,6 +246,8 @@ sudo firewall-cmd --get-services
 
 \`\`\`
 
+![service](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/firewalld%20services.JPG)
+
 \- We can see that the \`Home\` and \`Drop\` Zones are created by
 default.
 
@@ -249,6 +260,8 @@ default.
 sudo firewall-cmd --list-all-zones
 
 \`\`\`
+
+![list zones](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/firewalld%20zones.JPG)
 
 \- We can see that the \`Public\` and \`Drop\` Zones are created by
 default. Therefore, we will need to create Zones for \`Web\`, \`Sales\`,
@@ -299,9 +312,12 @@ sudo firewall-cmd --add-service=https --zone=public \--permanent
 
 sudo firewall-cmd --add-service=pop3 --zone=public \--permanent
 
-sudo firewall-cmd --add-service=smtp --zone=public \--permanen
+sudo firewall-cmd --add-service=smtp --zone=public \--permanent
 
-\`\`\`t
+![adding zones](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/adding%20more%20services%20to%20zones.JPG)
+
+
+\`\`\`
 
 \- Web:
 
@@ -327,6 +343,8 @@ sudo firewall-cmd --add-service=smtp --zone=Mail \--permanent
 
 sudo firewall-cmd --add-service=pop3 --zone=Mail --permanent
 
+![Binding hardware](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/Binding%20hardware%20to%20zone.JPG)
+
 \`\`\`
 
 \- What is the status of \`http\`, \`https\`, \`smtp\` and \`pop3\`?
@@ -343,6 +361,8 @@ sudo firewall-cmd --zone=drop --add-source=10.208.56.23 \--permanent
 sudo firewall-cmd --zone=drop --add-source=135.95.103.76 \--permanent
 
 sudo firewall-cmd --zone=drop --add-source=76.34.169.118 --permanent
+
+![dropzone](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/ips%20to%20dropzone.JPG)
 
 \`\`\`
 
@@ -373,6 +393,8 @@ Now, we\'ll want to provide truncated listings of all currently
 
 sudo firewall-cmd --get-active-zones
 
+
+![active-zone](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/firewall%20active-zones.JPG)
 \`\`\`
 
 #### Block an IP address
@@ -384,6 +406,8 @@ sudo firewall-cmd --get-active-zones
 sudo firewall-cmd \--zone=public --add-rich-rule=\'rule family="ipv4"
 source address="138.138.0.3" reject\'
 
+
+![richrule](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/adding%20rich%20rule.JPG)
 \`\`\`
 
 #### Block Ping/ICMP Requests
@@ -399,6 +423,7 @@ replies.
 sudo firewall-cmd --zone=public --add-icmp-block=echo-reply
 \--add-icmp-block=echo-request
 
+![Echo request](https://github.com/shansen18/BootCamp/blob/9b56f408d3a242161cc1027d8fd6bf615be8a870/Week11/Screen%20Shots/echo%20reply%20to%20public.JPG)
 \`\`\`
 
 #### Rule Check
@@ -589,46 +614,3 @@ Answer the following:
 Answer: Tcp \$external_net \$Http_Ports → \$home_net any (msg:" ET
 Trohan HS/Nemucod.m.gen downloading Ece Payload.
 
-2\. What was the adversarial motivation (purpose of attack)?
-
-Answer: To infect the targets users with malware bu a spam campaign.
-
-3\. Describe observations and indicators that may be related to the
-perpetrators of the intrusion. Categorize your insights according to the
-appropriate stage of the cyber kill chain, as structured in the
-following table.
-
-\| TTP \| Example \| Findings \|
-
-\| \-\-- \| \-\-- \| \-\-- \|
-
-\| \*\*Reconnaissance\*\* \| How did they attacker locate the victim? \|
-
-\| \*\*Weaponization\*\* \| What was it that was downloaded?\|
-
-\| \*\*Delivery\*\* \| How was it downloaded?\|
-
-\| \*\*Exploitation\*\* \| What does the exploit do?\|
-
-\| \*\*Installation\*\* \| How is the exploit installed?\|
-
-\| \*\*Command & Control (C2)\*\* \| How does the attacker gain control
-of the remote machine?\|
-
-\| \*\*Actions on Objectives\*\* \| What does the software that the
-attacker sent do to complete it\'s tasks?\|
-
-Answer:
-
-4\. What are your recommended mitigation strategies?
-
-Answer:
-
-5\. List your third-party references.
-
-Answer:
-
-\-\--
-
-Â© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights
-Reserved.
