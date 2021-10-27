@@ -162,7 +162,7 @@ Note that the next time you log into your Windows 10 machine, run `gpupdate`. Th
 
 **Deliverable for Task 3:** Submit a screenshot of the different `Windows PowerShell` policies within the Group Policy Management Editor. Four of these should be enabled.
 
-[poweshell](https://github.com/shansen18/BootCamp/blob/main/Week07/Images/Step3_powershell_policy.JPG)
+![poweshell](https://github.com/shansen18/BootCamp/blob/main/Week07/Images/Step3_powershell_policy.JPG)
 
 ---
 
@@ -211,7 +211,7 @@ Create a PowerShell script that will enumerate the Access Control List of each f
 
 **Deliverable for Task 4:** Submit a copy of your `enum_acls.ps1` script.
 
-[enum_acls.ps1](https://github.com/shansen18/BootCamp/blob/main/Week07/enum_acls.ps1)
+![enum_acls.ps1](https://github.com/shansen18/BootCamp/blob/main/Week07/enum_acls.ps1)
 
 ---
 

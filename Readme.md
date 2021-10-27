@@ -76,4 +76,8 @@ During week 6 homework we created a secret user on our Ubuntu virtualbox with no
 
 During this week we moved to Windows, and Windows administration. For out machines we used a Microsoft Azure machine. During this week we touched on gpedit, wmic, and how to use it to view system data. We then learned the basics of PowerShell, and finally Active Directory. 
 
-During Week 7 home work we 
+During Week 7 homework, we created a GPO in Active directory, set password lockouts, and created a PowerShell script.
+
+*note This also has a YouTube video at the bottom of the submission file to supplement the screen shots.*
+
+[Week 7 Submission File](https://github.com/shansen18/BootCamp/blob/df6670af86d9fcc22f9b9d1eb41d30f7db2ad0ad/Week07/README.md)
