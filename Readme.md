@@ -103,3 +103,14 @@ During this week we focused mainly on Wireshark and Pcap analysis and nslookup. 
 During this weeks homework we used nslookup and wireshark to figure out why mail was no longer getting to the servers. 
 
 [Week 9 Submission File](https://github.com/shansen18/BootCamp/blob/9f6d93caa4ba4ac254fdc116a0428b74ecf64eca/Week09/README.md)
+
+
+
+
+## Week 10 Cryptography
+
+During this we focused on the concepts involved with cryptography. These included basic transcription, and substitution ciphers. We were introduced to the Pain model: Privacy, Authentication, Integrity, Non-Repudiation. We used Open SSL to encrypt and decrypt messages, used hashes to validate the integrity of data. We also also used tools such as Hashcat, and Steghide.
+
+
+For this weeks homework we visited a cryptography webpage and had to solve several riddles. There was no submission file, just the flags, and a picture of the last page. Both of those and an offline version of the webpage can be found at :
+[Week10 Cryptography](https://github.com/shansen18/BootCamp/tree/main/Week10)
