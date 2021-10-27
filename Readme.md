@@ -91,4 +91,4 @@ This week we were introduced to computer Networking. This included concepts such
 
 During Week 7 homework we used nmap, and wireshark to analyze the network for a ficticious company called RockStar Corp. We were to find any vulnerabilities, as well as to scan the PCAP for any malicious activity. 
 
-[Week 8 Submission file]
+[Week 8 Submission file](https://github.com/shansen18/BootCamp/blob/a3328c09c7441dc24fe7ac95f1f1f78a46634e50/Week08/README.md))
