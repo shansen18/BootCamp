@@ -37,8 +37,8 @@ access, and allow everyone else read access only.
 
 - Command to set permissions (if needed): sudo chmod 644 passwd
 
-![](Pictures/10000000000002E10000007C91784492.png){width="6.9217in"
-height="1.161in"}
+![chmod passwdhttps://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/ls_passwd.png)
+
 
 ##\# Step 2: Create User Accounts
 

@@ -9,8 +9,7 @@ write access.
 
 - Command to set permissions (if needed): sudo chmod 600 shadow
 
-![](Pictures/100000000000030C0000006E1B35054B.png){width="6.9217in"
-height="0.9728in"}
+![chmod shadow](Images\ls_shadow.png)
 
 2\. Permissions on \`/etc/gshadow\` should allow only \`root\` read and
 write access.
@@ -19,8 +18,8 @@ write access.
 
 - Command to set permissions (if needed): sudo chmod 600 gshadow
 
-![](Pictures/100000000000044C0000005C1423F681.png){width="6.9217in"
-height="0.5756in"}
+![chmod gshadow](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/ls_gshadow.png)
+
 
 3\. Permissions on \`/etc/group\` should allow \`root\` read and write
 access, and allow everyone else read access only.
@@ -29,8 +28,7 @@ access, and allow everyone else read access only.
 
 - Command to set permissions (if needed): sudo chmod 644 group
 
-![](Pictures/10000000000002D60000008A7969CA99.png){width="6.9217in"
-height="1.3126in"}
+![chmod groups](https://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/ls_group.png)
 
 4\. Permissions on \`/etc/passwd\` should allow \`root\` read and write
 access, and allow everyone else read access only.
@@ -39,8 +37,8 @@ access, and allow everyone else read access only.
 
 - Command to set permissions (if needed): sudo chmod 644 passwd
 
-![](Pictures/10000000000002E10000007C91784492.png){width="6.9217in"
-height="1.161in"}
+![chmod passwdhttps://github.com/shansen18/BootCamp/blob/a0bc7165e908c8f968eb13453f87fcc543894c95/Week04/Images/ls_passwd.png)
+
 
 ##\# Step 2: Create User Accounts
 
