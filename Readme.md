@@ -81,3 +81,14 @@ During Week 7 homework, we created a GPO in Active directory, set password locko
 *note This also has a YouTube video at the bottom of the submission file to supplement the screen shots.*
 
 [Week 7 Submission File](https://github.com/shansen18/BootCamp/blob/df6670af86d9fcc22f9b9d1eb41d30f7db2ad0ad/Week07/README.md)
+
+
+
+
+## Week 8 Networking Fundamentals
+
+This week we were introduced to computer Networking. This included concepts such as network topology, the OSI mode, Ports, protocols, Ping, and FPING, SYN, ACK, RST, FIN. We also were introduced to Wireshark and how to analyze TCP traffic with it.  
+
+During Week 7 homework we used nmap, and wireshark to analyze the network for a ficticious company called RockStar Corp. We were to find any vulnerabilities, as well as to scan the PCAP for any malicious activity. 
+
+[Week 8 Submission file]
