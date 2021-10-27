@@ -230,7 +230,7 @@ sudo firewall-cmd --list-all
 
 \`\`\`
 
-![firewalld list-all0(https://github.com/shansen18/BootCamp/blob/main/Week11/Screen%20Shots/firewall%20list%20all%201.JPG)]
+![firewalld list-all](https://github.com/shansen18/BootCamp/blob/main/Week11/Screen%20Shots/firewall%20list%20all%201.JPG)
 
 \- Take note of what Zones and settings are configured. You many need to
 remove unneeded services and settings.
