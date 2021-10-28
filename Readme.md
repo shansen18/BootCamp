@@ -109,8 +109,68 @@ During this weeks homework we used nslookup and wireshark to figure out why mail
 
 ## Week 10 Cryptography
 
-During this we focused on the concepts involved with cryptography. These included basic transcription, and substitution ciphers. We were introduced to the Pain model: Privacy, Authentication, Integrity, Non-Repudiation. We used Open SSL to encrypt and decrypt messages, used hashes to validate the integrity of data. We also also used tools such as Hashcat, and Steghide.
+During this week we focused on the concepts involved with cryptography. These included basic transcription, and substitution ciphers. We were introduced to the Pain model: Privacy, Authentication, Integrity, Non-Repudiation. We used Open SSL to encrypt and decrypt messages, used hashes to validate the integrity of data. We also also used tools such as Hashcat, and Steghide.
 
 
 For this weeks homework we visited a cryptography webpage and had to solve several riddles. There was no submission file, just the flags, and a picture of the last page. Both of those and an offline version of the webpage can be found at :
-[Week10 Cryptography](https://github.com/shansen18/BootCamp/tree/main/Week10)
+
+[Week 10 Submission](https://github.com/shansen18/BootCamp/tree/main/Week10)
+
+
+
+
+## Week 11 Network Security
+
+This week we focused on network security. We examined the relationship between ports and services, including the role open ports play as the principal attack surface of networked machines. Then, we covered how firewalls are used to control access to a machine's open ports. We also covered intrusion detection systems and network security monitoring, and performed some network forensics. 
+
+
+For week 11 homework I answered several questions about IDS, the cyber kill chain, firewall archtectures, analyzed Snort rules, and worked with FirewallD rules within our Ubuntu Virtual machine. 
+
+[Week 11 Submission file](https://github.com/shansen18/BootCamp/blob/70ca47dc5654052b27315b80c75e64581d14144a/Week11/SubmissionFile.md)
+
+
+
+
+## Week 12 Cloud Security and Virtualization
+
+This week we focused we were introduced to Cloud computing and Virtualization. We were also introduced to the concept of Docker and Containers, as well Ansible, and the Yaml language. We used a trial version of Microsoft Azure to setup a small network. This network started with a Resource group, then we added a firewall and rules to secure this network, then we setup 4 machines. The first machine was a jumpbox, where we could remote connect into using SSH, and from there connect to the other machines. We then added two more machines, that ran the DVWA website using Ansible and Containers. We then created a load balancing machine, to control the previous two machines hosting the DVWA webpage. What this did was to create redundancy so if machine 1 would fail machine 2 would take over. 
+
+
+For this weeks homework, we simply had to create a drawing in Draw.io of the network layout and how everything connected to eachother.
+
+[Week 12 Network Map](https://github.com/shansen18/BootCamp/blob/aca6069c1f46761435ac9664bf4e0285e8c0023a/Week12/Azure_cloud.png)
+
+
+
+
+## Week 13 Elk Stack Project
+
+This week we focused on our first project, the Elk Stack Project. During this week we took our virtual network we created last week a step further, and added an Elk stack server to monitor the network. We again used the concepts of Ansible, and Docker to deploy this server, as well as deploy Filebeat and Metricbeat.
+
+
+The homework for this week focused on deploying the Elk stack server, as well focusing on creating documents in Github.  
+
+[Week 13 Project](https://github.com/shansen18/BootCamp/blob/70ca47dc5654052b27315b80c75e64581d14144a/Week11/SubmissionFile.md)
+
+
+
+
+## Week 14 Web Development
+
+During this week we learned about HTTP requests and responses. We also learned about Cookies and how to manage them. We then learned the concepts microservices and architecture. We also learned about the LEMP stack, and some basic SQL commands. 
+
+During this weeks homework we had to answer questions about HTTP requests and Responses, using Curl, and Sessions and Cookies. 
+
+[Week 14 Submission File](https://github.com/shansen18/BootCamp/blob/2486fe9143ea3d543ad58fa72daeb3c989e0db2e/Week14/README.md)
+
+
+
+
+## Week 15 Web Vulnerabilities and Hardening
+
+This week we focused on different types of attacks that can be directed at web applications. This included attacks such as XXS injection, SQL injection, directory traversals, file inclusion attacks, as well as conduct a brute force attack against a web app login with Burp Suite. We also leaned how to use Foxy proxy, and Burp Suites together to analyze HTTP requests, as well as modifying the data using the Burp Suite Repeater. 
+
+
+During this weeks homework we used our virtual machine perform a command injection, a brute force attack as well as Cross site scripting. After I proved the proof of concept, I wrote how to mitigate and protect from the attack. 
+
+[Week 15 Submission File](https://github.com/shansen18/BootCamp/blob/dcd70b8aacd437e6a174e33a22265ac28d49efdb/Week15/readme.md)
