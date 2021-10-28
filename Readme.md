@@ -4,24 +4,40 @@ Welcome to my portfolio. In here you will find the many projects I worked on dur
 
 Please understand that at the beginning of this class I had no experience with Github, so things may not be as professional as one would hope. 
 
-Below is the list of topic we covered each week. Note: I am still currently taking this course and new topics will be added weekly as we complete them.
+Below is the list of topic we covered each week.
+
 
 
 [Week 1 Security 101](#Week1-Security-101)
+
 [Week 2 Governance, Risk, and Compliance](#Week-2-Governance,-Risk,-and-Compliance)
+
 [Week 3 Terminal and Bash](#Week-3-Terminal-and-Bash)
+
 [Week 4 Linux SysAdmin Fundamentals](#Week-4-Linux-SysAdmin-Fundamentals)
+
 [Week 5 Archiving and Logging Data](#Week-5-Archiving-and-Logging-Data)
+
 [Week 6 Bash Scripting and Programing](#Week-6-Bash-Scripting-and-Programing)
+
 [Week 7 Windows Administration and Hardening](#Week-7-Windows-Administration-and-Hardening)
+
 [Week 8 Networking Fundamentals](#Week-8-Networking-Fundamentals)
+
 [Week 9 Networking Fundamentals II and CTF](#Week-9-Networking-Fundamentals-II-and-CTF)
+
 [Week 10 Cryptography](#Week-10-Cryptography)
+
 [Week 11 Network Security](Week-11-Network-Security)
+
 [Week 12 Cloud Security and Virtualization](#Week-12-Cloud-Security-and-Virtualization)
+
 [Week 13 Elk Stack Project](#Week-13-Elk-Stack-Project)
+
 [Week 14 Web Development](#Week-14-Web-Development)
+
 [Week 15 Web Vulnerabilities and Hardening](#Week[-15-Web-Vulnerabilities-and-Hardening)
+
 [Week 16 Penetration Testing](#Week-16-Penetration-Testing)
 
 
