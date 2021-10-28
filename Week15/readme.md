@@ -1,6 +1,6 @@
 ## Week 15: Web Vulnerabilities and Hardening
 
-
+ 
 ### Web Application 1: Your Wish is My Command Injection.
 
 In this section of the homework we used the DVWA website to perform a command injection on a webpage This is a very easy exploit that can be done on some web pages. On the page we exploited, there was a box to input an ip address to ping. 
@@ -12,9 +12,12 @@ So the way we went about this was put in a ip address to ping and then right aft
 
 
 
+
 ### Command Injection Mitigation
 
 One of the easiest ways to prevent this type of command injection is to not allow the special characters that can be used to inject additional commands. This is easy but not always effective. Which leads me to perhaps the best and most common practice, the practice of least privileges. This would mean that the user that the page is installed on and running on is only allowed to run the commands it needs for the webpage to work. 
+
+
 
 
 ### Web Application 2: A Brute Force to Be Reckoned With
@@ -25,7 +28,9 @@ In this part of the homework we used Burp Suite to brute force a web page. Brute
 
 
 
-###Brute Force Mitigation 
+
+
+### Brute Force Mitigation 
 
 As stated above, one of the ways to mitigate against a brute force attack is to have a minimum of 8 character password. This is business standard of today. 
 
@@ -36,11 +41,15 @@ But even with those two policies combined it could take a person a matter of hou
 A 2 factor authentication can be used as well, that way if the password does managed to get cracked, a hacker can't use it without the 2nd authentication code. 
 
 
+
+
 ### Web Application 3: Where's the BeEF? AKA Cross site scripting
 
 For this activity we used a cross site scripting application called BeEf. What BeEf does is basically infects a remote users browser and makes it a "zombie" awaiting instructions from the hacker. THe hacker can run many different exploits through the browser. One such attack that can be ran through BeEf is give an alert from what appears to be Facebook saying that you need to login again. When the victim puts in their credentials they are sent to the hacker, and not the hacker has the credentials. 
 
 ![BeEF1](https://github.com/shansen18/BootCamp/blob/dc469714ffbdfe6da5332b529c610d221305d869/Week15/Images/Beefhook_Pettytheft.JPG)
+
+
 
  
 ### Cross site scripting Mitigation
