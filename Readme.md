@@ -1,9 +1,33 @@
 # Scott Hansen's Cybersecurity Portfolio. 
 
-Welcome to my portfolio. In here you will find the many projects I worked on during my Cybersecurity bootcamp put on by the University of Minnesota. This readme will give a brief description of the homework, and what was to be learned, as well as a link to that weeks Readme file, which acts as the submission file for the homework. 
+Welcome to my portfolio. In here you will find the many projects I worked on during my Cybersecurity Boot Camp put on by the University of Minnesota. This readme will give a brief description of the homework, and what was to be learned, as well as a link to that weeks Readme file, which acts as the submission file for the homework. 
 
-Please understand that at the beginning of this class I had no experience wth github, so things may not be as professional as one would hope. 
+Please understand that at the beginning of this class I had no experience with Github, so things may not be as professional as one would hope. 
 
+Below is the list of topic we covered each week. Note: I am still currently taking this course and new topics will be added weekly as we complete them.
+
+
+[Week 1 Security 101](#Week1-Security-101)
+[Week 2 Governance, Risk, and Compliance](#Week-2-Governance,-Risk,-and-Compliance)
+[Week 3 Terminal and Bash](#Week-3-Terminal-and-Bash)
+[Week 4 Linux SysAdmin Fundamentals](#Week-4-Linux-SysAdmin-Fundamentals)
+[Week 5 Archiving and Logging Data](#Week-5-Archiving-and-Logging-Data)
+[Week 6 Bash Scripting and Programing](#Week-6-Bash-Scripting-and-Programing)
+[Week 7 Windows Administration and Hardening](#Week-7-Windows-Administration-and-Hardening)
+[Week 8 Networking Fundamentals](#Week-8-Networking-Fundamentals)
+[Week 9 Networking Fundamentals II and CTF](#Week-9-Networking-Fundamentals-II-and-CTF)
+[Week 10 Cryptography](#Week-10-Cryptography)
+[Week 11 Network Security](Week-11-Network-Security)
+[Week 12 Cloud Security and Virtualization](#Week-12-Cloud-Security-and-Virtualization)
+[Week 13 Elk Stack Project](#Week-13-Elk-Stack-Project)
+[Week 14 Web Development](#Week-14-Web-Development)
+[Week 15 Web Vulnerabilities and Hardening](#Week[-15-Web-Vulnerabilities-and-Hardening)
+[Week 16 Penetration Testing](#Week-16-Penetration-Testing)
+
+
+
+
+# Synopsis of each week as well as homework.
 ## Week 1 Security 101
 During Week one we focused on some definitions such as the CIA triad, cybersecurity. We also looked at possible careers in the cybersecurity field and what certificates they require. There was also some setup of our virtual machines during this week. 
 
@@ -174,3 +198,17 @@ This week we focused on different types of attacks that can be directed at web a
 During this weeks homework we used our virtual machine perform a command injection, a brute force attack as well as Cross site scripting. After I proved the proof of concept, I wrote how to mitigate and protect from the attack. 
 
 [Week 15 Submission File](https://github.com/shansen18/BootCamp/blob/dcd70b8aacd437e6a174e33a22265ac28d49efdb/Week15/readme.md)
+
+** Please note, any malicious activity was done against virtual machines hosted in my virtualbox. No Laws were broken. **
+
+
+## Week 16 Penetration Testing
+
+During this week we focused on the concept such as OSINT (open source information intelligence), as well as tools like NMAP used for network enumeration, or finding out what's vulnerable on the network. We then took it further and searched for any exploits using searchsploit. 
+
+During this weeks homework we performed some OSINT on demo.testfire.net, which is a fictional company with a real website for use in demonstrations in Cyber Security. We then ran Zenmap (or NMAP) against one of our virtual machines setup for penetration testing. 
+
+** Please note, any malicious activity was done against virtual machines hosted in my virtualbox. No Laws were broken. **
+
+[Week 16 Submission File](https://github.com/shansen18/BootCamp/blob/ee965da7002f9d3efc34c157c9c99483e7650531/Week16/README.md)
+

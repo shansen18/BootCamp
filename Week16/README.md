@@ -9,7 +9,7 @@
 
 - How can this information be helpful to an attacker:
   
-  A name is a great place to start when doing recon. From there one can gather more information such as Linkedin information, any information on facebook, twitter and other social media accounts. One can even get a address, and phone number. This creates a profile of the CEO which can help identify vectors of attack and also potential passwords. 
+  A name is a great place to start when doing recon. From there one can gather more information such as Linkedin information, any information on Facebook, Twitter and other social media accounts. One can even get a address, and phone number. This creates a profile of the CEO which can help identify vectors of attack and also potential passwords. 
 
 
 #### Step 2: DNS and Domain Discovery
@@ -73,12 +73,12 @@ Your client has asked that you help identify any vulnerabilities with their file
     vsFTPd version 2.3.4 backdoor
 
 
-  2. Why is it dangerous: As the exploit name says this is a backdoor into the system. It appears as a smiley face. Using this exploit gives you root privilages in the victims computer, as shown in the picture below.
+  2. Why is it dangerous: As the exploit name says this is a backdoor into the system. It appears as a smiley face. Using this exploit gives you root privileges in the victims computer, as shown in the picture below.
 
 ![backdoor](https://github.com/shansen18/BootCamp/blob/main/Week16/images/exploit.JPG)
 
 
-  3. What mitigation strategies can you recommendations for the client to protect their server: Update and patch the server, this is an old exploit, and aparrently was fixed within a day. 
+  3. What mitigation strategies can you recommendations for the client to protect their server: Update and patch the server, this is an old exploit, and apparently was fixed within a day. 
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
