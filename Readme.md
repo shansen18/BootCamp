@@ -10,7 +10,7 @@ Below is the list of topic we covered each week.
 
 [Week 1 Security 101](#Week-1-Security-101)
 
-[Week 2 Governance, Risk, and Compliance](#Week-2-Governance,-Risk,-and-Compliance)
+[Week 2 Governance, Risk, and Compliance](#Week-2-Governance-Risk-and-Compliance)
 
 [Week 3 Terminal and Bash](#Week-3-Terminal-and-Bash)
 
@@ -54,7 +54,7 @@ For the homework we read 4 Internet security threat reports, and answered some q
 
 
 
-## Week 2 Governance, Risk, and Compliance
+## Week 2 Governance Risk and Compliance
 
 During this week we focused on the Risk and Compliance side of the cybersecurity. What can and can't be done, what rule must be followed. We also covered some regulations such as HIPPA and PCI. We also covered a companies management structure, and what each area deals with when it comes to cybersecurity. 
 
