@@ -2,13 +2,13 @@
 
 Welcome to my portfolio. In here you will find the many projects I worked on during my Cybersecurity Boot Camp put on by the University of Minnesota. This readme will give a brief description of the homework, and what was to be learned, as well as a link to that weeks Readme file, which acts as the submission file for the homework. 
 
-Please understand that at the beginning of this class I had no experience with Github, so things may not be as professional as one would hope. 
+Please understand that at the beginning of this class I had no experience with Github, so things may not be as professional as one would hope. Also as I'm still in this class, the list below will continue to expand as I complete additional work. 
 
 Below is the list of topic we covered each week.
 
 
 
-[Week 1 Security 101](#Week1-Security-101)
+[Week 1 Security 101](#Week-1-Security-101)
 
 [Week 2 Governance, Risk, and Compliance](#Week-2-Governance,-Risk,-and-Compliance)
 
