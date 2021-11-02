@@ -72,7 +72,12 @@ Normally during a penetration I would have to break into the network and scan th
   
 Now that I have both network connection and the IP address, I run the NMAP tool with the option os -sV, which allows us to see the service or version of what's running on that port. The command looked like `nmap -sV`
   
-![nmap]https://github.com/shansen18/BootCamp/blob/6ec2eb53990e277a1ea7ca4c160cd36957bc56fa/Week17/images/nmap%20results.JPG
+![nmap](https://github.com/shansen18/BootCamp/blob/6ec2eb53990e277a1ea7ca4c160cd36957bc56fa/Week17/images/nmap%20results.JPG)
+  
+
+
+
+
   
   
 As we see it's the normal services running on the ports except port 8000, which has Icecast running on it. Once I found out this information I quick Googled, Icecast to find out what it is, and found that it's an open source or free in other terms, streaming server for audio/video. 
