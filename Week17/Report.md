@@ -16,32 +16,30 @@ secret recipe file on Hans' computer, while reporting the findings back
 to GoodCorp.
 
 When performing the internal penetration test, there were several
-alarming vulnerabilities that were
-
-identified on Hans' desktop. When performing the attacks, GoodSecurity
+alarming vulnerabilities that were identified on Mr. Gruber's desktop. When performing the attacks, GoodSecurity
 was able to gain access to his machine and find the secret recipe file
 by exploit two programs that had major vulnerabilities. The details of
 the attack can be found in the 'Findings' category.
 
 1.  # Findings
 
-Machine IP:
+**Machine IP:**
 
 192.168.0.6
 
-Hostname:
+**Hostname:**
 
 MSEDGEWIN10
 
-Vulnerability Exploited:
+**Vulnerability Exploited:**
 
-Icecast Header Overwrite (metasploit exploit/windows/http/icecast_header
+Icecast Header Overwrite (Metasploit exploit/windows/http/icecast_header
 
-Vulnerability Explanation:
+**Vulnerability Explanation:**
 
-During our investigation we found that this comoputer was subject to a
+During our investigation we found that this computer was subject to a
 buffer overflow exploit that allows an attacker to remotely gain control
-of the system, using the Icecast service on port 8000. This explopit
+of the system, using the Icecast service on port 8000. This exploit
 operated by over writing the memory on the affected system.
 
 Some actions that an attacker may take on a vulnerable system are:
@@ -62,13 +60,13 @@ automaticaly in Vista-Win8
 Windows Net-NTLMv2 (exploit/windows/local/ms16_075_reflection) this
 exploit can be used for privilege elevations.
 
-Severity:
+**Severity:**
 
 Because of the multiple exploits found, as well as the fact it allows us
 privilege escalation, uploading and downloading of files, this would be
 classified as a Critical Severity Level.
 
-Proof of Concept:
+**Proof of Concept:**
 
 Normally during a penetration I would have to break into the network and scan the network in order to find the computer that I would then need to attack. However that was not the scope of this test, and I was given access to the network as well as the working IP address of the victims computer (192.168.0.6)
 
@@ -190,8 +188,8 @@ There should be a separate finding for each vulnerability found!
  # Recommendations
 
 To fix the vulnerability issues on Mr. Grubers computer. We at GoodSecurity recommend that Mr. Gruber updates Icecast to the latest version. The version found on Mr. Gruber's computer is 2.0.1, the current version is 2.4.4. We at GoodSecurity further suggest that Mr. Gruber update his computer on a regular basis in order to stay on top of any security patches that maybe released.  We also suggest that Mr. Gruber turns on the firewall & Network protection on his, as having this turned on will prevent this exploit from happening. 
-Additionally during the briefing of the scope of this test, Mr. Gruber made mention that the companies passwords are long and complex and therefore un-hackable. During this test, our tester was able to find, download and break the hash for the Administrators account. It was found that although the password contained: upper and lowercase letters, and numbers and special characters, and a length of nine characters, it was easy to break because it was based off a word that is found in a dictionary. GoodCorp could further protect their passwords by completely randomizing the letters number and special characters into a sequence that does not resemble a word in a dictionary. 
+Additionally during the briefing of the scope of this test, Mr. Gruber made mention that the companies passwords are long and complex and therefore un-hackable. During this test, our tester was able to find, download and crack the hash for the Administrators account. It was found that although the password contained: upper and lowercase letters, and numbers and special characters, and a length of nine characters, it was easy to break because it was based off a word that is found in a dictionary. GoodCorp could further protect their passwords by completely randomizing the letters number and special characters into a sequence that does not resemble a word in a dictionary. 
 GoodSecurity also suggests that if Icecast is not needed on Mr. Grubers computer, to move the Icecast program onto a server. This will prevent any issues with lack system resources issues that may come with a media streaming program. This will also allow the IT team to manage the server and services patches to the Icecast program as well as manage the firewall rules.  
 
 
-With these simple fixes, GoodCorp can secure Mr. Grubers computer
+With these simple fixes, GoodCorp can secure Mr. Grubers computer from the current vulnerability, as well as protect against any further potential vulnerabilities due to the lack of patching security flaws. 
