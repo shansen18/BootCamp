@@ -40,12 +40,13 @@ Below is the list of topic we covered each week.
 
 [Week 16 Penetration Testing](#Week-16-Penetration-Testing)
 
+[Week 17 Penetration Testing 2](#Week-17-Penetration-Testing-2)
 
 
 
 # Synopsis of each week as well as homework.
 ## Week 1 Security 101
-During Week one we focused on some definitions such as the CIA triad, cybersecurity. We also looked at possible careers in the cybersecurity field and what certificates they require. There was also some setup of our virtual machines during this week. 
+During Week 1 we focused on some definitions such as the CIA triad, cybersecurity. We also looked at possible careers in the cybersecurity field and what certificates they require. There was also some setup of our virtual machines during this week. 
 
 For the homework we read 4 Internet security threat reports, and answered some questions on them. 
 
@@ -228,3 +229,13 @@ During this weeks homework we performed some OSINT on demo.testfire.net, which i
 
 [Week 16 Submission File](https://github.com/shansen18/BootCamp/blob/ee965da7002f9d3efc34c157c9c99483e7650531/Week16/README.md)
 
+
+
+## Week 17 Penetration Testing 2
+
+During this week we focused on using nmap to scan ports for potential vulnerabilities. We also Focused on Metasploit, and how to load modules, view the modules information, and modify them to focus on a victims computer. We also learned about Meterpreter, and how to deliver the payload that opens an instance of Meterpreter in the victims computer memory, as well as some commands to use in Meterpreter to interact with the victims computer. 
+
+
+During this weeks homework we were tasked to perform a penetration test against a fictional CEO's computer, simulated by using a virtual computer loaded with the Icecast vulnerability. We then had to write a report on what we found and how this vulnerability could be resolved. 
+
+[Week 17 Report](https://github.com/shansen18/BootCamp/blob/c09518b722395f239f24c0c94b7b36ffd27433e1/Week17/Report.pdf)
