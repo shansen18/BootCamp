@@ -78,7 +78,7 @@ Now that I have both network connection and the IP address, I run the NMAP tool 
 
 
 
-  
+
   
 As we see it's the normal services running on the ports except port 8000, which has Icecast running on it. Once I found out this information I quick Googled, Icecast to find out what it is, and found that it's an open source or free in other terms, streaming server for audio/video. 
 With that knowledge I searched for an exploit using the searchsploit command. This is easily done by typing `searchsploit Icecast`, and as you see a couple exploits were found. 
@@ -188,7 +188,7 @@ Once I received the hashes, I copied them to a file I named hashes.txt on my att
   
 ![john](https://github.com/shansen18/BootCamp/blob/e5c97c371c3a80a0bddbdea6480b5f8218ace37c/Week17/images/john_results.JPG)
   
-There should be a separate finding for each vulnerability found!
+
   
  # Recommendations
   
