@@ -1,0 +1,95 @@
+Identify the offensive traffic.
+
+Identify the traffic between your machine and the web machine:
+
+When did the interaction occur?
+On November 12,2021 Between the hours of 8:36PM and 8:44PM
+
+What responses did the victim send back?
+401, Unauthorized client error 
+207, status for multiple independent processes and used by WebDAV servers
+404, page not found
+200, OK success status response 
+
+What data is concerning from the Blue Team perspective?
+The Data with the response of 401
+
+
+
+
+
+Find the request for the hidden directory.
+
+In your attack, you found a secret folder. Let's look at that interaction between these two machines.
+
+How many requests were made to this directory? At what time and from which IP address(es)?
+5,243 hits, between 8:42pm and 8:43pm.
+
+
+What kind of alarm would you set to detect this behavior in the future?
+I would set a baseline request attempts to alert for any requests for that file. 
+
+Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+First place remove that file from the webserver, there is no need for it to be there. Or only allow requests to that folder from specific ip or ip's. 
+
+
+
+
+
+Identify the brute force attack.
+
+After identifying the hidden directory, you used Hydra to brute-force the target server. Answer the following questions:
+
+Can you identify packets specifically from Hydra? 
+Yes, by filtering it by User_agent.original: "Mozilla/4.0 (Hydra)"
+
+How many requests were made in the brute-force attack?
+11,160
+
+How many requests had the attacker made before discovering the correct password in this one?
+11,159
+
+What kind of alarm would you set to detect this behavior in the future and at what threshold(s)?
+Set an alert for failed 10 failed log in attempts in 10 minutes. This will allow the user to have some failed attempts, but wont allow too many from a brute force attack. 
+
+Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+I would alert on connections to this file. 
+
+Lock the account for a minute after 3 failed attempts, and get progressively longer lockout per 3 attempts
+
+
+
+
+Find the WebDav connection.
+
+Use your dashboard to answer the following questions:
+
+How many requests were made to this directory?
+34 requests
+Which file(s) were requested? http://192.168.1.105/webdav/shell.php
+
+What kind of alarm would you set to detect such access in the future?
+I would alarm for any connections to this file from any none trusted computers.
+
+Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+
+Remove connection to the file from website.
+Also only allow connections to this file from trusted machines.  
+
+
+
+
+Identify the reverse shell and meterpreter traffic.
+
+To finish off the attack, you uploaded a PHP reverse shell and started a meterpreter shell session. Answer the following questions:
+
+Can you identify traffic from the meterpreter session?
+source.ip: 192.168.1.90 and destination.ip: 192.168.1.105 and url.full: "http://192.168.1.105/webdav/shell.php"
+
+What kinds of alarms would you set to detect this behavior in the future?
+
+Set an alert for any PHP traffic going to or from the server. 
+
+Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+
+Not allow php traffic to the server. 
