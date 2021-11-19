@@ -45,5 +45,5 @@ VSI has insider information that JobeCorp will launch the same webserver attack 
 
 What other rules can you create to protect VSI from attacks against your webserver?
 
-**Block all incoming traffic where the POST = VSI_Account_Logon.php**
-**Block where the useragent= Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 2.0.50727987787; InfoPath.1)**
+- **Block all incoming traffic where the POST = VSI_Account_Logon.php**
+- **Block where the useragent= Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 2.0.50727987787; InfoPath.1)**
