@@ -239,3 +239,11 @@ During this week we focused on using nmap to scan ports for potential vulnerabil
 During this weeks homework we were tasked to perform a penetration test against a fictional CEO's computer, simulated by using a virtual computer loaded with the Icecast vulnerability. We then had to write a report on what we found and how this vulnerability could be resolved. 
 
 [Week 17 Report](https://github.com/shansen18/BootCamp/blob/c09518b722395f239f24c0c94b7b36ffd27433e1/Week17/Report.pdf)
+
+
+
+## Week 18 SEIM 1
+
+During this week we learned about SEIMs. This included what SEIM vendors are out there, and how SEIM's work. We also got introduced to Splunk. In Splunk we learned how to upload data, and write SPL queries to analyze the data. We also learned how to create new fields, schedule reports, and schedule alerts if an attack occurs. 
+
+During this weeks homework we acted as a SOC analyst hired to analyze a DDOS attack, and design alerts to the SOC  vgfgfgf nmb team in case it happens again. 
