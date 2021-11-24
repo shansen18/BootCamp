@@ -13,4 +13,4 @@ This laptop was designed to be a gaming computer, but I wanted it for the class 
 
 So lets get down to the projects. 
 
-## [Home Network](https://github.com/shansen18/BootCamp/blob/4debee1a238c3f4c8062b2dad74ecc2d237f17b3/Personal_Projects/Home%20Network/Images/Home%20Network%20setup.jpg)
+[Home Network](https://github.com/shansen18/BootCamp/blob/4debee1a238c3f4c8062b2dad74ecc2d237f17b3/Personal_Projects/Home%20Network/README.md)
