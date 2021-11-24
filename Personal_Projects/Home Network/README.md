@@ -13,3 +13,5 @@ There is only one problem I have with this layout and the Security Onion Monitor
 
 
 **Note** I did not connect my Wife's work computer to the part of the network being monitored, as I didn't feel right doing so. 
+
+![Map](https://github.com/shansen18/BootCamp/blob/main/Personal_Projects/Home%20Network/Images/Home%20Network%20setup.jpg)
