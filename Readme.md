@@ -32,7 +32,7 @@ Below is the list of topic we covered each week.
 
 [Week 12 Cloud Security and Virtualization](#Week-12-Cloud-Security-and-Virtualization)
 
-[Week 13 Elk Stack Project](#Week-13-Elk-Stack-Project)
+[Project: Elk Stack](#Week-13-Elk-Stack-Project)
 
 [Week 14 Web Development](#Week-14-Web-Development)
 
@@ -41,6 +41,14 @@ Below is the list of topic we covered each week.
 [Week 16 Penetration Testing](#Week-16-Penetration-Testing)
 
 [Week 17 Penetration Testing 2](#Week-17-Penetration-Testing-2)
+
+[Week 18 SEIM 1](#Week-18-SEIM-1)
+
+[Week 19 SEIM 2](#Week-19-SEIM-2)
+
+[Project Red Vs Blue](#Red-vs-Blue-project)
+
+[Week 21 Forensics](#Week-21-Forensics)
 
 
 
@@ -244,6 +252,36 @@ During this weeks homework we were tasked to perform a penetration test against 
 
 ## Week 18 SEIM 1
 
-During this week we learned about SEIMs. This included what SEIM vendors are out there, and how SEIM's work. We also got introduced to Splunk. In Splunk we learned how to upload data, and write SPL queries to analyze the data. We also learned how to create new fields, schedule reports, and schedule alerts if an attack occurs. 
+During this week we learned about SEIMs. This included what SEIM vendors are out there, and how SEIM's work. We also got introduced to Splunk. In Splunk we learned how to upload data, and write SQL queries to analyze the data. We also learned how to create new fields, schedule reports, and schedule alerts if an attack occurs. 
 
-During this weeks homework we acted as a SOC analyst hired to analyze a DDOS attack, and design alerts to the SOC  vgfgfgf nmb team in case it happens again. 
+During this week's homework we acted as a SOC analyst hired to analyze a DDOS attack, and design alerts to the SOC team in case it happens again. 
+
+[Week 18 Homework](https://github.com/shansen18/BootCamp/blob/e8b480ce3c7a7e5ec6953a341cd984a056bcd734/Week18/Readme.md)
+
+## Week 19 SEIM 2
+
+During this week we continued to focus on SEIM's specifically Splunk. During this time we learned about using the data to create dashboards and ways to visualize the data. We also learned how to create a Heatmap using  We also continued to expand on the knowledge of Splunk that was learned in Week 18. 
+
+
+During this week's homework we worked with SPlunk to analyze and attack on a company, by examining the attack logs. This was a little difficult as the data was created long ago, however we overcame this issue by adjusting the time range to narrowly focus the time range into the date when the attack was simulated. 
+
+[Week 19 Homework](https://github.com/shansen18/BootCamp/blob/01fd700c91df4c5f05c9550ffcb9f4ae9d716a91/Week19/Readme.md)
+
+
+## Red vs Blue project
+
+During this week we focused on our second project, working on it during class time. See below for the description of the project. 
+
+An Azure machine with 3 computer in Hyper-V, networked together. A virtual network in a virtual machine. One computer was a Kali Linux machine used as an attacker. The second Hyper-V machine was setup to be a web server, that was setup to be the victim. The third Hyper-V machine was an ELK server, used to identify the attack. The first part of this project, the class acted as the Red Team, and analyzed
+the web server for vulnerabilities, and exploit them. This was done by using Metasploit to create payload which allowed for reverse shell connection that was used to exfiltrate data off that server. The second half, The class acted as the Blue team to analyze the signature of
+the attack. From there advise was given on what could be done to mitigate this type of attack from happening again.
+
+[Red Vs Blue Project](https://github.com/shansen18/BootCamp/blob/3c1be2f19f551dfe530fd506f6020a15d70f4d99/red_vs_blue/Project%202.pdf)
+
+## Week 21 Forensics
+
+During this week we learned about digital forensics. Things focused on during this week are identifying, extracting, preserving, and reporting on information obtained from computer and network systems. During this week we also learned about smartphone forensic investigations (specifically the Apple IPhone). This included programs used to extract and view the phone data. The structure of the IPhone database. We also learned how to tag and export evidence from the phone, and then examining some of it with sqlitebrowser. 
+
+This weeks homework we performed a digital forensic analysis of an Iphone's data. This homework was based on the National Gallery Exercise, however rather than looking at the overall scenario, we focused specifically on Tracy's IPhone, and how it related to the stamp theft. 
+
+[Week 21 Homework](https://github.com/shansen18/BootCamp/blob/b74e2c5e9b75cac26974f7189d2c0f2dbe486a19/Week21/21.3%20The%20Final%20Report.pdf)
