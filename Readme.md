@@ -1,5 +1,14 @@
 # Scott Hansen's Cybersecurity Portfolio. 
 
+## Personal projects
+
+I have engaged in some learning and labs in my own time. Some of these things was creating my own SEIM (security onion), and creating internal networks. I have also worked on vulnhub machines, and hackthebox, ctflearn, and try hackme. A discription of some of these projects can be found on this GitHub. 
+
+[Personal Projects](https://github.com/shansen18/BootCamp/blob/512b7ae8a391f007128c6699c38d8c3f549f473f/Personal_Projects/README.MD)
+
+
+## Cyber Security Bootcamp Homework
+
 Welcome to my portfolio. In here you will find the many projects I worked on during my Cybersecurity Boot Camp put on by the University of Minnesota. This readme will give a brief description of the homework, and what was to be learned, as well as a link to that weeks Readme file, which acts as the submission file for the homework. 
 
 Please understand that at the beginning of this class I had no experience with Github, so things may not be as professional as one would hope. Also as I'm still in this class, the list below will continue to expand as I complete additional work. 

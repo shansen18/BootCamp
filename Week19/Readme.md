@@ -20,7 +20,7 @@ Provide global mitigations that the whole company can use and individual mitigat
 
 Question 2
 
-VSI has insider information that JobeCorp attempted to target users by sending "Bad Logins" to lock out every user.
+VSI has insider information that JobCorp attempted to target users by sending "Bad Logins" to lock out every user.
 What sort of mitigation could you use to protect against this?
 
 
