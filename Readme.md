@@ -1,5 +1,8 @@
 # Scott Hansen's Cybersecurity Portfolio. 
 
+
+## Resume
+[Resume](https://github.com/shansen18/BootCamp/blob/main/Scott_Hansen_Resume.PDF)
 ## Personal projects
 
 I have engaged in some learning and labs in my own time. Some of these things was creating my own SEIM (security onion), and creating internal networks. I have also worked on vulnhub machines, and hackthebox, ctflearn, and try hackme. A discription of some of these projects can be found on this GitHub. 
