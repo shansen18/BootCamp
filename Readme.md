@@ -48,7 +48,7 @@ Below is the list of topic we covered each week.
 
 [Week 14 Web Development](#Week-14-Web-Development)
 
-[Week 15 Web Vulnerabilities and Hardening](#Week[-15-Web-Vulnerabilities-and-Hardening)
+[Week 15 Web Vulnerabilities and Hardening](#Week-15-Web-Vulnerabilities-and-Hardening)
 
 [Week 16 Penetration Testing](#Week-16-Penetration-Testing)
 
